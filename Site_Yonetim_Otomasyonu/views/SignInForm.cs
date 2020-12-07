@@ -1,5 +1,6 @@
 ﻿using DevExpress.Utils;
 using DevExpress.XtraEditors;
+using Site_Yonetim_Otomasyonu.views;
 using System;
 using System.ComponentModel;
 using System.Threading;
@@ -16,11 +17,9 @@ namespace Site_Yonetim_Otomasyonu
             Thread.Sleep(5000);
             InitializeComponent();
             thread.Abort();
-
-
         }
       
-        private void formRun()
+        public void formRun()
         {
             Application.Run(new SplashForm());
         }
@@ -53,6 +52,14 @@ namespace Site_Yonetim_Otomasyonu
         private void simpleButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void simpleButton2_Click_1(object sender, EventArgs e)
+        {
+            SignUpForm signUpForm = new SignUpForm();
+            signUpForm.Show();
+            this.Hide();
+            
         }
     }
 

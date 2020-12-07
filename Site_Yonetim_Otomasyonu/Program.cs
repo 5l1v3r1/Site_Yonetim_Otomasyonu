@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Site_Yonetim_Otomasyonu.views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Site_Yonetim_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new SignUpForm());
         }
     }
 }

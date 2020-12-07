@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -36,11 +37,10 @@
             this.passwordLabel = new DevExpress.XtraEditors.LabelControl();
             this.loginButton = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
@@ -62,6 +62,16 @@
             this.gradientPanel1.TabIndex = 7;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_lock_208px;
+            this.pictureBox1.Location = new System.Drawing.Point(65, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(262, 211);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // simpleButton2
             // 
             this.simpleButton2.Location = new System.Drawing.Point(150, 506);
@@ -69,6 +79,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(93, 33);
             this.simpleButton2.TabIndex = 6;
             this.simpleButton2.Text = "Kayıt OL";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click_1);
             // 
             // simpleButton1
             // 
@@ -129,16 +140,6 @@
             this.textEdit2.Size = new System.Drawing.Size(136, 20);
             this.textEdit2.TabIndex = 4;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_lock_208px;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(262, 211);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,9 +157,9 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
