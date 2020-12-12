@@ -9,16 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Site_Yonetim_Otomasyonu.views
+namespace Site_Yonetim_Otomasyonu.Screens
 {
-    public partial class SignUpForm : XtraForm
+    public partial class MainForm : XtraForm
     {
-        public SignUpForm()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        private void SignUpForm_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }

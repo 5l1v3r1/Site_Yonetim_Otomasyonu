@@ -113,6 +113,16 @@ namespace Site_Yonetim_Otomasyonu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_user_male_480px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_add_user_male_480px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_apartment_250px {
             get {
                 object obj = ResourceManager.GetObject("icons8_apartment_250px", resourceCulture);
