@@ -133,6 +133,56 @@ namespace Site_Yonetim_Otomasyonu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_apartment_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_apartment_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_car_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_car_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_home_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_list_16px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_list_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_list_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_list_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_lock_208px {
             get {
                 object obj = ResourceManager.GetObject("icons8_lock_208px", resourceCulture);
@@ -146,6 +196,26 @@ namespace Site_Yonetim_Otomasyonu.Properties {
         internal static System.Drawing.Bitmap icons8_lock_52px {
             get {
                 object obj = ResourceManager.GetObject("icons8_lock_52px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_paper_money_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_paper_money_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_person_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_person_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
