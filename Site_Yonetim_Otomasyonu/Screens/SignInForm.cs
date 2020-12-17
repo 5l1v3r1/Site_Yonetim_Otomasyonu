@@ -112,5 +112,11 @@ namespace Site_Yonetim_Otomasyonu
             }
         }
 
+        private void forgetPasswordButton_Click(object sender, EventArgs e)
+        {
+            ForgetPasswordForm forgetPasswordForm = new ForgetPasswordForm();
+            this.Hide();
+            forgetPasswordForm.Show();
+        }
     }
 }

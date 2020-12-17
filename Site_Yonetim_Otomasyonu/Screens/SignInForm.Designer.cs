@@ -104,6 +104,7 @@
             this.forgetPasswordButton.Size = new System.Drawing.Size(93, 33);
             this.forgetPasswordButton.TabIndex = 5;
             this.forgetPasswordButton.Text = "Şifremi Unuttum";
+            this.forgetPasswordButton.Click += new System.EventHandler(this.forgetPasswordButton_Click);
             // 
             // userNameTextEdit
             // 

@@ -1,4 +1,5 @@
-﻿using Site_Yonetim_Otomasyonu.views;
+﻿using Site_Yonetim_Otomasyonu.Screens;
+using Site_Yonetim_Otomasyonu.views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
