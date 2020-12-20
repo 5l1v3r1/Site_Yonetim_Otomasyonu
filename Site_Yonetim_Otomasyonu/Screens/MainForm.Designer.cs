@@ -43,12 +43,31 @@
             this.personBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.homePageNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel6 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.gradientPanel2 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.homeNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.carNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel3 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.duesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel4 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.personNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel5 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
+            this.homePageNavigationPage.SuspendLayout();
+            this.homeNavigationPage.SuspendLayout();
+            this.gradientPanel1.SuspendLayout();
+            this.carNavigationPage.SuspendLayout();
+            this.gradientPanel3.SuspendLayout();
+            this.duesNavigationPage.SuspendLayout();
+            this.gradientPanel4.SuspendLayout();
+            this.personNavigationPage.SuspendLayout();
+            this.gradientPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tileBar
@@ -57,6 +76,8 @@
             this.tileBar.AllowSelectedItem = true;
             this.tileBar.AppearanceGroupText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.tileBar.AppearanceGroupText.Options.UseForeColor = true;
+            this.tileBar.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tileBar.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.tileBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.tileBar.DropDownButtonWidth = 30;
@@ -129,7 +150,7 @@
             // 
             // duesBarItem
             // 
-            this.duesBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(149)))), ((int)(((byte)(89)))));
+            this.duesBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
             this.duesBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.duesBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             tileItemElement4.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_paper_money_32px;
@@ -141,7 +162,7 @@
             // 
             // personBarItem
             // 
-            this.personBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(79)))), ((int)(((byte)(47)))));
+            this.personBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
             this.personBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.personBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             tileItemElement5.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_person_32px;
@@ -175,41 +196,157 @@
             // 
             // homePageNavigationPage
             // 
+            this.homePageNavigationPage.Caption = "homePageNavigationPage";
+            this.homePageNavigationPage.Controls.Add(this.gradientPanel6);
+            this.homePageNavigationPage.Controls.Add(this.gradientPanel2);
             this.homePageNavigationPage.Name = "homePageNavigationPage";
-            this.homePageNavigationPage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(111)))), ((int)(((byte)(166)))));
             this.homePageNavigationPage.Size = new System.Drawing.Size(1316, 753);
+            // 
+            // gradientPanel6
+            // 
+            this.gradientPanel6.Angle = 0F;
+            this.gradientPanel6.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.gradientPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel6.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel6.Name = "gradientPanel6";
+            this.gradientPanel6.Size = new System.Drawing.Size(1004, 753);
+            this.gradientPanel6.TabIndex = 10;
+            this.gradientPanel6.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            // 
+            // gradientPanel2
+            // 
+            this.gradientPanel2.Angle = 40F;
+            this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel2.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel2.Name = "gradientPanel2";
+            this.gradientPanel2.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel2.TabIndex = 9;
+            this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             // 
             // homeNavigationPage
             // 
-            this.homeNavigationPage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(144)))), ((int)(((byte)(191)))));
-            this.homeNavigationPage.Appearance.Options.UseBackColor = true;
             this.homeNavigationPage.Caption = "homeNavigationPage";
+            this.homeNavigationPage.Controls.Add(this.gradientPanel1);
             this.homeNavigationPage.Name = "homeNavigationPage";
             this.homeNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.Angle = 40F;
+            this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel1.Controls.Add(this.labelControl4);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel1.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel1.TabIndex = 8;
+            this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(66, 8);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(181, 33);
+            this.labelControl4.TabIndex = 11;
+            this.labelControl4.Text = "Daire İşlemleri";
+            // 
             // carNavigationPage
             // 
-            this.carNavigationPage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(187)))), ((int)(((byte)(216)))));
-            this.carNavigationPage.Appearance.Options.UseBackColor = true;
             this.carNavigationPage.Caption = "carNavigationPage";
+            this.carNavigationPage.Controls.Add(this.gradientPanel3);
             this.carNavigationPage.Name = "carNavigationPage";
             this.carNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
+            // gradientPanel3
+            // 
+            this.gradientPanel3.Angle = 40F;
+            this.gradientPanel3.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel3.Controls.Add(this.labelControl3);
+            this.gradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel3.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel3.Name = "gradientPanel3";
+            this.gradientPanel3.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel3.TabIndex = 9;
+            this.gradientPanel3.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(70, 8);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(173, 33);
+            this.labelControl3.TabIndex = 11;
+            this.labelControl3.Text = "Araç İşlemleri";
+            // 
             // duesNavigationPage
             // 
-            this.duesNavigationPage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(149)))), ((int)(((byte)(89)))));
-            this.duesNavigationPage.Appearance.Options.UseBackColor = true;
             this.duesNavigationPage.Caption = "duesNavigationPage";
+            this.duesNavigationPage.Controls.Add(this.gradientPanel4);
             this.duesNavigationPage.Name = "duesNavigationPage";
             this.duesNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
+            // gradientPanel4
+            // 
+            this.gradientPanel4.Angle = 40F;
+            this.gradientPanel4.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel4.Controls.Add(this.labelControl2);
+            this.gradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel4.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel4.Name = "gradientPanel4";
+            this.gradientPanel4.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel4.TabIndex = 9;
+            this.gradientPanel4.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Location = new System.Drawing.Point(65, 8);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(183, 33);
+            this.labelControl2.TabIndex = 11;
+            this.labelControl2.Text = "Aidat İşlemleri";
+            // 
             // personNavigationPage
             // 
-            this.personNavigationPage.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(79)))), ((int)(((byte)(47)))));
-            this.personNavigationPage.Appearance.Options.UseBackColor = true;
             this.personNavigationPage.Caption = "personNavigationPage";
+            this.personNavigationPage.Controls.Add(this.gradientPanel5);
             this.personNavigationPage.Name = "personNavigationPage";
             this.personNavigationPage.Size = new System.Drawing.Size(1316, 753);
+            // 
+            // gradientPanel5
+            // 
+            this.gradientPanel5.Angle = 40F;
+            this.gradientPanel5.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel5.Controls.Add(this.labelControl1);
+            this.gradientPanel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel5.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel5.Name = "gradientPanel5";
+            this.gradientPanel5.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel5.TabIndex = 9;
+            this.gradientPanel5.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(82, 8);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(149, 33);
+            this.labelControl1.TabIndex = 10;
+            this.labelControl1.Text = "Kişi İşlemleri";
             // 
             // MainForm
             // 
@@ -226,6 +363,19 @@
             this.Text = "Site Yonetim Otomasyonu";
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
+            this.homePageNavigationPage.ResumeLayout(false);
+            this.homeNavigationPage.ResumeLayout(false);
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            this.carNavigationPage.ResumeLayout(false);
+            this.gradientPanel3.ResumeLayout(false);
+            this.gradientPanel3.PerformLayout();
+            this.duesNavigationPage.ResumeLayout(false);
+            this.gradientPanel4.ResumeLayout(false);
+            this.gradientPanel4.PerformLayout();
+            this.personNavigationPage.ResumeLayout(false);
+            this.gradientPanel5.ResumeLayout(false);
+            this.gradientPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -250,6 +400,15 @@
         private DevExpress.XtraBars.Navigation.NavigationPage carNavigationPage;
         private DevExpress.XtraBars.Navigation.NavigationPage duesNavigationPage;
         private DevExpress.XtraBars.Navigation.NavigationPage personNavigationPage;
-
+        private GradientPanel gradientPanel2;
+        private GradientPanel gradientPanel1;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private GradientPanel gradientPanel3;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private GradientPanel gradientPanel4;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private GradientPanel gradientPanel5;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private GradientPanel gradientPanel6;
     }
 }
