@@ -54,7 +54,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
                 MainForm mainForm = new MainForm();
 
-                mainForm.ShowData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+                mainForm.ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                 "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
 

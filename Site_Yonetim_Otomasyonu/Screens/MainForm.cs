@@ -16,16 +16,73 @@ namespace Site_Yonetim_Otomasyonu.Screens
     public partial class MainForm : DevExpress.XtraEditors.XtraForm
     {
         SqlConnection connection = new SqlConnection(ServerConnection.stringConnection);
+        SqlCommand sqlCommand;
+        SqlCommand sqlCommand1;
         public MainForm()
         {
             InitializeComponent();
-            ShowData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+            ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                 "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
+
+            ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
+                "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire");
+
+
+
+            ComboBoxItemFromDatabase();
+
+            ComboBoxItemFromDatabase2();
+
             connection.Close();
         }
 
-        public void ShowData(string data)
+         public void ComboBoxItemFromDatabase()
+        {
+            apartmentHostComboBoxEdit2.Properties.Items.Clear();
+
+            connection.Open();
+            sqlCommand = connection.CreateCommand();
+            sqlCommand.CommandType = CommandType.Text;  
+            sqlCommand.CommandText = "SELECT Ad,Soyad FROM Kisi WHERE Daire_Sahibi='Sahip'";
+            
+
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            sqlDataAdapter.Fill(dataTable);
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                apartmentHostComboBoxEdit2.Properties.Items.Add(dr["Ad"].ToString()+" "+ dr["Soyad"].ToString());
+            }
+            connection.Close();
+
+        }
+
+        public void ComboBoxItemFromDatabase2()
+        {
+            apartmentPersonComboBoxEdit3.Properties.Items.Clear();
+
+
+            connection.Open();
+            sqlCommand1 = connection.CreateCommand();
+            sqlCommand1.CommandType = CommandType.Text;
+            sqlCommand1.CommandText = "SELECT Ad,Soyad FROM Kisi WHERE Daire_Sahibi='Kiraci'";
+
+            DataTable dataTable1 = new DataTable();
+            SqlDataAdapter sqlDataAdapter1 = new SqlDataAdapter(sqlCommand1);
+            sqlDataAdapter1.Fill(dataTable1);
+
+            foreach (DataRow dr in dataTable1.Rows)
+            {
+                apartmentPersonComboBoxEdit3.Properties.Items.Add(dr["Ad"].ToString() + " " + dr["Soyad"].ToString());
+            }
+
+
+            connection.Close();
+
+        }
+
+        public void ShowPersonData(string data)
         {
 
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(data, connection);
@@ -36,20 +93,22 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
         }
 
+        public void ShowApartmentData(string data)
+        {
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(data, connection);
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+
+            dataGridView2.DataSource = dataSet.Tables[0];
+
+        }
+
         private void tileBar_SelectedItemChanged(object sender, TileItemEventArgs e)
         {
             navigationFrame.SelectedPageIndex = tileBarGroupTables.Items.IndexOf(e.Item);
         }
 
-        private void employeesNavigationPage_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gradientPanel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void registerButton_Click(object sender, EventArgs e)
         {
@@ -99,31 +158,21 @@ namespace Site_Yonetim_Otomasyonu.Screens
             }
         }
 
-        private void sahipCheckedComboBoxEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void loginButton_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked && !string.IsNullOrEmpty(textEdit2.Text))
             {
-                ShowData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+                ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                 "',Aciklama,Is_Adresi as'Is Adresi' From Kisi Where Daire_Sahibi='"+ textEdit2.Text+"'");
             }else if(radioButton2.Checked && !string.IsNullOrEmpty(textEdit2.Text)) {
-                ShowData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+                ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                "',Aciklama,Is_Adresi as'Is Adresi' From Kisi Where Ad='" + textEdit2.Text + "'");
             }
             else if (radioButton3.Checked && !string.IsNullOrEmpty(textEdit2.Text))
             {
-                ShowData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+                ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                "',Aciklama,Is_Adresi as'Is Adresi' From Kisi Where Soyad='" + textEdit2.Text + "'");
             }
@@ -181,6 +230,53 @@ namespace Site_Yonetim_Otomasyonu.Screens
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton8_Click_1(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(apartmentNumtextEdit.Text) &&
+                !string.IsNullOrEmpty(apartmentStatusComboBoxEdit1.Text) &&
+                !string.IsNullOrEmpty(apartmentHostComboBoxEdit2.Text) &&
+                !string.IsNullOrEmpty(apartmentPersonComboBoxEdit3.Text) &&
+                !string.IsNullOrEmpty(floorUpDown1.Text))
+            {
+                //check apartment number 
+                string sql = "SELECT * FROM Daire WHERE Daire_Numarasi = '" + apartmentNumtextEdit.Text + "'";
+                DataTable checkApartmentNumber = Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(sql);
+                if (checkApartmentNumber.Rows.Count > 0)
+                {
+                    MessageBox.Show("Daire Numarasi Onceden Kayitli Farkli Bir Numara Deneyin",
+                        "Uyari",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    string mySQL = string.Empty;
+
+                    mySQL = "INSERT INTO Daire (Daire_Numarasi, Daire_Durumu, Daire_Sakini, Kat,Daire_Sahibi) " +
+                        "VALUES('" + apartmentNumtextEdit.Text+ "','" + apartmentStatusComboBoxEdit1.Text  +
+                        "','" + apartmentPersonComboBoxEdit3.Text + "','" + floorUpDown1.Text +
+                        "','" + apartmentHostComboBoxEdit2.Text + "')";
+
+                    Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(mySQL);
+
+                    MessageBox.Show("Basariyla Daireyi Kaydettiniz :)",
+                   "Basarirli",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Lutfen Tum Alanlari Doldurunuz!",
+                  "Hata",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
