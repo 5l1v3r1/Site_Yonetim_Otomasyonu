@@ -121,6 +121,18 @@
     <Compile Include="Screens\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\UpdateApartmenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\UpdateApartmenForm.Designer.cs">
+      <DependentUpon>UpdateApartmenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UpdateDuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\UpdateDuesForm.Designer.cs">
+      <DependentUpon>UpdateDuesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\UpdateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UpdateApartmenForm.resx">
+      <DependentUpon>UpdateApartmenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UpdateDuesForm.resx">
+      <DependentUpon>UpdateDuesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\UpdateUserForm.resx">
       <DependentUpon>UpdateUserForm.cs</DependentUpon>

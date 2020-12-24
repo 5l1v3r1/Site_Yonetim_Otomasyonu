@@ -28,7 +28,8 @@ namespace Site_Yonetim_Otomasyonu.Screens
             ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
                 "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire");
 
-
+            ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
+                ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat");
 
             ComboBoxItemFromDatabase();
 
@@ -37,7 +38,30 @@ namespace Site_Yonetim_Otomasyonu.Screens
             connection.Close();
         }
 
-         public void ComboBoxItemFromDatabase()
+        public void ComboBoxDuesFromDatabase()
+        {
+
+            connection.Open();
+            sqlCommand = connection.CreateCommand();
+            sqlCommand.CommandType = CommandType.Text;
+            sqlCommand.CommandText = "SELECT Ad,Soyad FROM Kisi WHERE Daire_Sahibi='Sahip'";
+
+
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            sqlDataAdapter.Fill(dataTable);
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                apartmentHostComboBoxEdit2.Properties.Items.Add(dr["Ad"].ToString() + " " + dr["Soyad"].ToString());
+            }
+            connection.Close();
+
+        }
+
+
+
+
+        public void ComboBoxItemFromDatabase()
         {
             apartmentHostComboBoxEdit2.Properties.Items.Clear();
 
@@ -101,6 +125,17 @@ namespace Site_Yonetim_Otomasyonu.Screens
             sqlDataAdapter.Fill(dataSet);
 
             dataGridView2.DataSource = dataSet.Tables[0];
+
+        }
+
+        public void ShowDuesData(string data)
+        {
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(data, connection);
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+
+            dataGridView3.DataSource = dataSet.Tables[0];
 
         }
 
@@ -276,6 +311,119 @@ namespace Site_Yonetim_Otomasyonu.Screens
                 MessageBox.Show("Lutfen Tum Alanlari Doldurunuz!",
                   "Hata",
                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void simpleButton13_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(duesNoTextEdit8.Text)&&
+                !string.IsNullOrEmpty(duesAprtBoxEdit1.Text)&&
+                !string.IsNullOrEmpty(dateEdit1.Text)&&
+                !string.IsNullOrEmpty(duesPayEdit5.Text)&&
+                !string.IsNullOrEmpty(dmrbsTextEdit4.Text)
+                )
+            {
+                int total = int.Parse(dmrbsTextEdit4.Text) + int.Parse(duesPayEdit5.Text);
+                totalTextEdit6.Text = total.ToString();
+                //check dues number 
+                string sql = "SELECT * FROM Aidat WHERE Aidat_No = '" + duesNoTextEdit8.Text + "'";
+                DataTable checDuesNumber = Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(sql);
+                if (checDuesNumber.Rows.Count > 0)
+                {
+                    MessageBox.Show("Aidat Numarasi Onceden Kayitli Farkli Bir Numara Deneyin",
+                        "Uyari",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+
+                    string mySQL = string.Empty;
+
+                    mySQL = "INSERT INTO Aidat (Aidat_No, Daire_Numarasi, Tarih, Aidat_Ucreti,Demirbas_Giderleri,Toplam_Tutar) " +
+                        "VALUES('" + duesNoTextEdit8.Text + "','" + duesAprtBoxEdit1.Text +
+                        "','" + dateEdit1.Text + "','" + duesPayEdit5.Text +
+                        "','" + dmrbsTextEdit4.Text + "','" + totalTextEdit6.Text + "')";
+
+                    Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(mySQL);
+
+                    MessageBox.Show("Basariyla Aidati Kaydettiniz :)",
+                   "Basarirli",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Lutfen Tum Alanlari Doldurunuz!",
+                                 "Hata",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void totalTextEdit6_EditValueChanged(object sender, EventArgs e)
+        {
+            totalTextEdit6.ReadOnly = true;
+
+            
+        }
+
+        private void simpleButton11_Click(object sender, EventArgs e)
+        {
+            tabPane3.SelectNextPage();
+
+        }
+
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+            if (this.dataGridView3.SelectedRows.Count > 0)
+            {
+                connection.Open();
+                dataGridView3.Rows.RemoveAt(this.dataGridView3.SelectedRows[0].Index);
+                string selectedDues = dataGridView3.CurrentRow.Cells[0].Value.ToString();
+                SqlCommand cmd = new SqlCommand("DELETE FROM Aidat WHERE Aidat_No =" + selectedDues + "", connection);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Kisi Silindi!", "Harika", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Kisi Secin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void simpleButton14_Click(object sender, EventArgs e)
+        {
+            ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
+               ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat");
+        }
+
+        private void simpleButton10_Click(object sender, EventArgs e)
+        {
+            UpdateDuesForm updateDuesForm = new UpdateDuesForm();
+
+            updateDuesForm.duesNoTextEdit8.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
+            updateDuesForm.duesAprtBoxEdit1.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
+            updateDuesForm.dateEdit1.Text = dataGridView3.CurrentRow.Cells[2].Value.ToString();
+            updateDuesForm.duesPayEdit5.Text = dataGridView3.CurrentRow.Cells[3].Value.ToString();
+            updateDuesForm.dmrbsTextEdit4.Text = dataGridView3.CurrentRow.Cells[4].Value.ToString();
+            updateDuesForm.totalTextEdit6.Text = dataGridView3.CurrentRow.Cells[5].Value.ToString();
+
+            updateDuesForm.Show();
+
+
+        }
+
+        private void simpleButton12_Click(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked && !string.IsNullOrEmpty(textEdit3.Text))
+            {
+                ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
+                ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat Where Aidat_No='"+textEdit3.Text+"'");
+            }else if (radioButton7.Checked && !string.IsNullOrEmpty(textEdit3.Text))
+            {
+                ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
+               ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat Where Daire_Numarasi='" + textEdit3.Text + "'");
             }
         }
     }

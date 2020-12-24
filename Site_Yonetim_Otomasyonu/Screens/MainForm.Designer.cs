@@ -43,43 +43,72 @@
             this.personBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.homePageNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gradientPanel6 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.gradientPanel2 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.homeNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.carNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.duesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.personNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabPane2 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.apartmentPersonComboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.apartmentHostComboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.floorUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.apartmentStatusComboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.apartmentNumtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.floorUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.apartmentStatusComboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.apartmentHostComboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.apartmentPersonComboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.gradientPanel6 = new Site_Yonetim_Otomasyonu.GradientPanel();
-            this.gradientPanel2 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.carNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.gradientPanel3 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.duesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.tabPane3 = new DevExpress.XtraBars.Navigation.TabPane();
+            this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.duesAprtBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.totalTextEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.dmrbsTextEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.duesNoTextEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.duesPayEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
             this.gradientPanel4 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.personNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.gradientPanel7 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.goster = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -112,31 +141,48 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.gradientPanel5 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.homePageNavigationPage.SuspendLayout();
             this.homeNavigationPage.SuspendLayout();
-            this.carNavigationPage.SuspendLayout();
-            this.duesNavigationPage.SuspendLayout();
-            this.personNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).BeginInit();
             this.tabPane2.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            this.tabNavigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.tabNavigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentPersonComboBoxEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentHostComboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.floorUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentStatusComboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentHostComboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentPersonComboBoxEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).BeginInit();
             this.gradientPanel1.SuspendLayout();
+            this.carNavigationPage.SuspendLayout();
             this.gradientPanel3.SuspendLayout();
+            this.duesNavigationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPane3)).BeginInit();
+            this.tabPane3.SuspendLayout();
+            this.tabNavigationPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            this.tabNavigationPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.duesAprtBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.totalTextEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dmrbsTextEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duesNoTextEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duesPayEdit5.Properties)).BeginInit();
             this.gradientPanel4.SuspendLayout();
+            this.personNavigationPage.SuspendLayout();
             this.gradientPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -154,7 +200,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lastNameTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameTextEdit.Properties)).BeginInit();
             this.gradientPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tileBar
@@ -289,6 +334,28 @@
             this.homePageNavigationPage.Name = "homePageNavigationPage";
             this.homePageNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
+            // gradientPanel6
+            // 
+            this.gradientPanel6.Angle = 0F;
+            this.gradientPanel6.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.gradientPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel6.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel6.Name = "gradientPanel6";
+            this.gradientPanel6.Size = new System.Drawing.Size(1004, 753);
+            this.gradientPanel6.TabIndex = 10;
+            this.gradientPanel6.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            // 
+            // gradientPanel2
+            // 
+            this.gradientPanel2.Angle = 40F;
+            this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel2.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel2.Name = "gradientPanel2";
+            this.gradientPanel2.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel2.TabIndex = 9;
+            this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
             // homeNavigationPage
             // 
             this.homeNavigationPage.Caption = "homeNavigationPage";
@@ -296,27 +363,6 @@
             this.homeNavigationPage.Controls.Add(this.gradientPanel1);
             this.homeNavigationPage.Name = "homeNavigationPage";
             this.homeNavigationPage.Size = new System.Drawing.Size(1316, 753);
-            // 
-            // carNavigationPage
-            // 
-            this.carNavigationPage.Controls.Add(this.gradientPanel3);
-            this.carNavigationPage.Name = "carNavigationPage";
-            this.carNavigationPage.Size = new System.Drawing.Size(1316, 753);
-            // 
-            // duesNavigationPage
-            // 
-            this.duesNavigationPage.Caption = "duesNavigationPage";
-            this.duesNavigationPage.Controls.Add(this.gradientPanel4);
-            this.duesNavigationPage.Name = "duesNavigationPage";
-            this.duesNavigationPage.Size = new System.Drawing.Size(1316, 753);
-            // 
-            // personNavigationPage
-            // 
-            this.personNavigationPage.Caption = "personNavigationPage";
-            this.personNavigationPage.Controls.Add(this.gradientPanel7);
-            this.personNavigationPage.Controls.Add(this.gradientPanel5);
-            this.personNavigationPage.Name = "personNavigationPage";
-            this.personNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
             // tabPane2
             // 
@@ -346,6 +392,132 @@
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(1004, 724);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(200, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(804, 724);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupControl3.Appearance.Options.UseBackColor = true;
+            this.groupControl3.Controls.Add(this.groupControl4);
+            this.groupControl3.Controls.Add(this.simpleButton7);
+            this.groupControl3.Controls.Add(this.textEdit1);
+            this.groupControl3.Controls.Add(this.radioButton4);
+            this.groupControl3.Controls.Add(this.radioButton5);
+            this.groupControl3.Controls.Add(this.radioButton6);
+            this.groupControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl3.Location = new System.Drawing.Point(0, 0);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(200, 724);
+            this.groupControl3.TabIndex = 0;
+            this.groupControl3.Text = "Filitrele";
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupControl4.Appearance.Options.UseBackColor = true;
+            this.groupControl4.CaptionLocation = DevExpress.Utils.Locations.Top;
+            this.groupControl4.Controls.Add(this.simpleButton4);
+            this.groupControl4.Controls.Add(this.simpleButton5);
+            this.groupControl4.Controls.Add(this.simpleButton6);
+            this.groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl4.Location = new System.Drawing.Point(0, 263);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(200, 461);
+            this.groupControl4.TabIndex = 19;
+            this.groupControl4.Text = "Islemler";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(31, 329);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton4.TabIndex = 22;
+            this.simpleButton4.Text = "Daire Sil";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Location = new System.Drawing.Point(31, 178);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton5.TabIndex = 21;
+            this.simpleButton5.Text = "Daire Duzenle";
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Location = new System.Drawing.Point(30, 27);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton6.TabIndex = 20;
+            this.simpleButton6.Text = "Daire  Ekle";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Location = new System.Drawing.Point(19, 173);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton7.TabIndex = 18;
+            this.simpleButton7.Text = "Filitrele";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(19, 147);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(124, 20);
+            this.textEdit1.TabIndex = 5;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton4.ForeColor = System.Drawing.Color.Black;
+            this.radioButton4.Location = new System.Drawing.Point(19, 93);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(105, 20);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Daire Sakini";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton5.ForeColor = System.Drawing.Color.Black;
+            this.radioButton5.Location = new System.Drawing.Point(19, 70);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(106, 20);
+            this.radioButton5.TabIndex = 1;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Daire Sahibi";
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton6.ForeColor = System.Drawing.Color.Black;
+            this.radioButton6.Location = new System.Drawing.Point(19, 47);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(115, 20);
+            this.radioButton6.TabIndex = 0;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Daire Durumu";
+            this.radioButton6.UseVisualStyleBackColor = false;
+            // 
             // tabNavigationPage2
             // 
             this.tabNavigationPage2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
@@ -365,6 +537,71 @@
             this.tabNavigationPage2.Controls.Add(this.labelControl18);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.Size = new System.Drawing.Size(1004, 724);
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Appearance.Options.UseForeColor = true;
+            this.labelControl14.Location = new System.Drawing.Point(419, 61);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(167, 41);
+            this.labelControl14.TabIndex = 12;
+            this.labelControl14.Text = "Daire Ekle";
+            // 
+            // apartmentPersonComboBoxEdit3
+            // 
+            this.apartmentPersonComboBoxEdit3.Location = new System.Drawing.Point(517, 367);
+            this.apartmentPersonComboBoxEdit3.Name = "apartmentPersonComboBoxEdit3";
+            this.apartmentPersonComboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.apartmentPersonComboBoxEdit3.Properties.HideSelection = false;
+            this.apartmentPersonComboBoxEdit3.Size = new System.Drawing.Size(136, 20);
+            this.apartmentPersonComboBoxEdit3.TabIndex = 51;
+            // 
+            // apartmentHostComboBoxEdit2
+            // 
+            this.apartmentHostComboBoxEdit2.Location = new System.Drawing.Point(517, 322);
+            this.apartmentHostComboBoxEdit2.Name = "apartmentHostComboBoxEdit2";
+            this.apartmentHostComboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.apartmentHostComboBoxEdit2.Properties.HideSelection = false;
+            this.apartmentHostComboBoxEdit2.Size = new System.Drawing.Size(136, 20);
+            this.apartmentHostComboBoxEdit2.TabIndex = 50;
+            // 
+            // floorUpDown1
+            // 
+            this.floorUpDown1.Location = new System.Drawing.Point(517, 412);
+            this.floorUpDown1.Name = "floorUpDown1";
+            this.floorUpDown1.Size = new System.Drawing.Size(136, 21);
+            this.floorUpDown1.TabIndex = 49;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Appearance.Options.UseForeColor = true;
+            this.labelControl13.Location = new System.Drawing.Point(470, 409);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(41, 24);
+            this.labelControl13.TabIndex = 48;
+            this.labelControl13.Text = "Kat:";
+            // 
+            // apartmentStatusComboBoxEdit1
+            // 
+            this.apartmentStatusComboBoxEdit1.Location = new System.Drawing.Point(517, 275);
+            this.apartmentStatusComboBoxEdit1.Name = "apartmentStatusComboBoxEdit1";
+            this.apartmentStatusComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.apartmentStatusComboBoxEdit1.Properties.HideSelection = false;
+            this.apartmentStatusComboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "-",
+            "Sahibi",
+            "Kiraci"});
+            this.apartmentStatusComboBoxEdit1.Size = new System.Drawing.Size(136, 20);
+            this.apartmentStatusComboBoxEdit1.TabIndex = 47;
             // 
             // simpleButton8
             // 
@@ -431,207 +668,6 @@
             this.labelControl18.TabIndex = 31;
             this.labelControl18.Text = "Daire Numarasi:";
             // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton6.ForeColor = System.Drawing.Color.Black;
-            this.radioButton6.Location = new System.Drawing.Point(19, 47);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(115, 20);
-            this.radioButton6.TabIndex = 0;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Daire Durumu";
-            this.radioButton6.UseVisualStyleBackColor = false;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton5.ForeColor = System.Drawing.Color.Black;
-            this.radioButton5.Location = new System.Drawing.Point(19, 70);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(106, 20);
-            this.radioButton5.TabIndex = 1;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Daire Sahibi";
-            this.radioButton5.UseVisualStyleBackColor = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton4.ForeColor = System.Drawing.Color.Black;
-            this.radioButton4.Location = new System.Drawing.Point(19, 93);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(105, 20);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Daire Sakini";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(19, 147);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(124, 20);
-            this.textEdit1.TabIndex = 5;
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Location = new System.Drawing.Point(19, 173);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(124, 49);
-            this.simpleButton7.TabIndex = 18;
-            this.simpleButton7.Text = "Filitrele";
-            // 
-            // groupControl4
-            // 
-            this.groupControl4.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupControl4.Appearance.Options.UseBackColor = true;
-            this.groupControl4.CaptionLocation = DevExpress.Utils.Locations.Top;
-            this.groupControl4.Controls.Add(this.simpleButton4);
-            this.groupControl4.Controls.Add(this.simpleButton5);
-            this.groupControl4.Controls.Add(this.simpleButton6);
-            this.groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.groupControl4.Location = new System.Drawing.Point(0, 263);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(200, 461);
-            this.groupControl4.TabIndex = 19;
-            this.groupControl4.Text = "Islemler";
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Location = new System.Drawing.Point(30, 27);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(124, 49);
-            this.simpleButton6.TabIndex = 20;
-            this.simpleButton6.Text = "Daire  Ekle";
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(31, 178);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(124, 49);
-            this.simpleButton5.TabIndex = 21;
-            this.simpleButton5.Text = "Daire Duzenle";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(31, 329);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(124, 49);
-            this.simpleButton4.TabIndex = 22;
-            this.simpleButton4.Text = "Daire Sil";
-            // 
-            // groupControl3
-            // 
-            this.groupControl3.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupControl3.Appearance.Options.UseBackColor = true;
-            this.groupControl3.Controls.Add(this.groupControl4);
-            this.groupControl3.Controls.Add(this.simpleButton7);
-            this.groupControl3.Controls.Add(this.textEdit1);
-            this.groupControl3.Controls.Add(this.radioButton4);
-            this.groupControl3.Controls.Add(this.radioButton5);
-            this.groupControl3.Controls.Add(this.radioButton6);
-            this.groupControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.groupControl3.Location = new System.Drawing.Point(0, 0);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(200, 724);
-            this.groupControl3.TabIndex = 0;
-            this.groupControl3.Text = "Filitrele";
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.Location = new System.Drawing.Point(470, 409);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(41, 24);
-            this.labelControl13.TabIndex = 48;
-            this.labelControl13.Text = "Kat:";
-            // 
-            // floorUpDown1
-            // 
-            this.floorUpDown1.Location = new System.Drawing.Point(517, 412);
-            this.floorUpDown1.Name = "floorUpDown1";
-            this.floorUpDown1.Size = new System.Drawing.Size(136, 21);
-            this.floorUpDown1.TabIndex = 49;
-            // 
-            // apartmentStatusComboBoxEdit1
-            // 
-            this.apartmentStatusComboBoxEdit1.Location = new System.Drawing.Point(517, 275);
-            this.apartmentStatusComboBoxEdit1.Name = "apartmentStatusComboBoxEdit1";
-            this.apartmentStatusComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.apartmentStatusComboBoxEdit1.Properties.HideSelection = false;
-            this.apartmentStatusComboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "-",
-            "Sahibi",
-            "Kiraci"});
-            this.apartmentStatusComboBoxEdit1.Size = new System.Drawing.Size(136, 20);
-            this.apartmentStatusComboBoxEdit1.TabIndex = 47;
-            // 
-            // apartmentHostComboBoxEdit2
-            // 
-            this.apartmentHostComboBoxEdit2.Location = new System.Drawing.Point(517, 322);
-            this.apartmentHostComboBoxEdit2.Name = "apartmentHostComboBoxEdit2";
-            this.apartmentHostComboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.apartmentHostComboBoxEdit2.Properties.HideSelection = false;
-            this.apartmentHostComboBoxEdit2.Size = new System.Drawing.Size(136, 20);
-            this.apartmentHostComboBoxEdit2.TabIndex = 50;
-            // 
-            // apartmentPersonComboBoxEdit3
-            // 
-            this.apartmentPersonComboBoxEdit3.Location = new System.Drawing.Point(517, 367);
-            this.apartmentPersonComboBoxEdit3.Name = "apartmentPersonComboBoxEdit3";
-            this.apartmentPersonComboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.apartmentPersonComboBoxEdit3.Properties.HideSelection = false;
-            this.apartmentPersonComboBoxEdit3.Size = new System.Drawing.Size(136, 20);
-            this.apartmentPersonComboBoxEdit3.TabIndex = 51;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(419, 61);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(167, 41);
-            this.labelControl14.TabIndex = 12;
-            this.labelControl14.Text = "Daire Ekle";
-            // 
-            // gradientPanel6
-            // 
-            this.gradientPanel6.Angle = 0F;
-            this.gradientPanel6.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.gradientPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradientPanel6.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel6.Name = "gradientPanel6";
-            this.gradientPanel6.Size = new System.Drawing.Size(1004, 753);
-            this.gradientPanel6.TabIndex = 10;
-            this.gradientPanel6.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            // 
-            // gradientPanel2
-            // 
-            this.gradientPanel2.Angle = 40F;
-            this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
-            this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gradientPanel2.Location = new System.Drawing.Point(1004, 0);
-            this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(312, 753);
-            this.gradientPanel2.TabIndex = 9;
-            this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            // 
             // gradientPanel1
             // 
             this.gradientPanel1.Angle = 40F;
@@ -655,6 +691,12 @@
             this.labelControl4.Size = new System.Drawing.Size(181, 33);
             this.labelControl4.TabIndex = 11;
             this.labelControl4.Text = "Daire İşlemleri";
+            // 
+            // carNavigationPage
+            // 
+            this.carNavigationPage.Controls.Add(this.gradientPanel3);
+            this.carNavigationPage.Name = "carNavigationPage";
+            this.carNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
             // gradientPanel3
             // 
@@ -680,6 +722,339 @@
             this.labelControl3.TabIndex = 11;
             this.labelControl3.Text = "Araç İşlemleri";
             // 
+            // duesNavigationPage
+            // 
+            this.duesNavigationPage.Caption = "duesNavigationPage";
+            this.duesNavigationPage.Controls.Add(this.tabPane3);
+            this.duesNavigationPage.Controls.Add(this.gradientPanel4);
+            this.duesNavigationPage.Name = "duesNavigationPage";
+            this.duesNavigationPage.Size = new System.Drawing.Size(1316, 753);
+            // 
+            // tabPane3
+            // 
+            this.tabPane3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tabPane3.Appearance.Options.UseBackColor = true;
+            this.tabPane3.Controls.Add(this.tabNavigationPage3);
+            this.tabPane3.Controls.Add(this.tabNavigationPage4);
+            this.tabPane3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPane3.Location = new System.Drawing.Point(0, 0);
+            this.tabPane3.Name = "tabPane3";
+            this.tabPane3.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.tabNavigationPage3,
+            this.tabNavigationPage4});
+            this.tabPane3.RegularSize = new System.Drawing.Size(1004, 753);
+            this.tabPane3.SelectedPage = this.tabNavigationPage3;
+            this.tabPane3.Size = new System.Drawing.Size(1004, 753);
+            this.tabPane3.TabIndex = 32;
+            this.tabPane3.Text = "tabPane3";
+            // 
+            // tabNavigationPage3
+            // 
+            this.tabNavigationPage3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tabNavigationPage3.Appearance.Options.UseBackColor = true;
+            this.tabNavigationPage3.Caption = "Aidat Goster";
+            this.tabNavigationPage3.Controls.Add(this.dataGridView3);
+            this.tabNavigationPage3.Controls.Add(this.groupControl5);
+            this.tabNavigationPage3.Name = "tabNavigationPage3";
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1004, 724);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(200, 0);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView3.Size = new System.Drawing.Size(804, 724);
+            this.dataGridView3.TabIndex = 1;
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupControl5.Appearance.Options.UseBackColor = true;
+            this.groupControl5.Controls.Add(this.groupControl6);
+            this.groupControl5.Controls.Add(this.simpleButton12);
+            this.groupControl5.Controls.Add(this.textEdit3);
+            this.groupControl5.Controls.Add(this.radioButton7);
+            this.groupControl5.Controls.Add(this.radioButton8);
+            this.groupControl5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupControl5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl5.Location = new System.Drawing.Point(0, 0);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.Size = new System.Drawing.Size(200, 724);
+            this.groupControl5.TabIndex = 0;
+            this.groupControl5.Text = "Filitrele";
+            // 
+            // groupControl6
+            // 
+            this.groupControl6.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupControl6.Appearance.Options.UseBackColor = true;
+            this.groupControl6.CaptionLocation = DevExpress.Utils.Locations.Top;
+            this.groupControl6.Controls.Add(this.simpleButton14);
+            this.groupControl6.Controls.Add(this.simpleButton9);
+            this.groupControl6.Controls.Add(this.simpleButton10);
+            this.groupControl6.Controls.Add(this.simpleButton11);
+            this.groupControl6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl6.Location = new System.Drawing.Point(0, 263);
+            this.groupControl6.Name = "groupControl6";
+            this.groupControl6.Size = new System.Drawing.Size(200, 461);
+            this.groupControl6.TabIndex = 19;
+            this.groupControl6.Text = "Islemler";
+            // 
+            // simpleButton14
+            // 
+            this.simpleButton14.Location = new System.Drawing.Point(31, 356);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton14.TabIndex = 23;
+            this.simpleButton14.Text = "Yenile";
+            this.simpleButton14.Click += new System.EventHandler(this.simpleButton14_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Location = new System.Drawing.Point(31, 251);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton9.TabIndex = 22;
+            this.simpleButton9.Text = "Aidat Sil";
+            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Location = new System.Drawing.Point(31, 146);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton10.TabIndex = 21;
+            this.simpleButton10.Text = "Aidat Duzenle";
+            this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Location = new System.Drawing.Point(31, 41);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton11.TabIndex = 20;
+            this.simpleButton11.Text = "Aidat Ekle";
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
+            // 
+            // simpleButton12
+            // 
+            this.simpleButton12.Location = new System.Drawing.Point(36, 173);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton12.TabIndex = 18;
+            this.simpleButton12.Text = "Filitrele";
+            this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(36, 147);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(124, 20);
+            this.textEdit3.TabIndex = 5;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton7.ForeColor = System.Drawing.Color.Black;
+            this.radioButton7.Location = new System.Drawing.Point(36, 93);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(128, 20);
+            this.radioButton7.TabIndex = 2;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Daire Numarasi";
+            this.radioButton7.UseVisualStyleBackColor = false;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton8.ForeColor = System.Drawing.Color.Black;
+            this.radioButton8.Location = new System.Drawing.Point(36, 70);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(84, 20);
+            this.radioButton8.TabIndex = 1;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Aidat No";
+            this.radioButton8.UseVisualStyleBackColor = false;
+            // 
+            // tabNavigationPage4
+            // 
+            this.tabNavigationPage4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.tabNavigationPage4.Appearance.Options.UseBackColor = true;
+            this.tabNavigationPage4.Caption = "Aidat Ekle";
+            this.tabNavigationPage4.Controls.Add(this.labelControl20);
+            this.tabNavigationPage4.Controls.Add(this.duesAprtBoxEdit1);
+            this.tabNavigationPage4.Controls.Add(this.dateEdit1);
+            this.tabNavigationPage4.Controls.Add(this.totalTextEdit6);
+            this.tabNavigationPage4.Controls.Add(this.labelControl19);
+            this.tabNavigationPage4.Controls.Add(this.dmrbsTextEdit4);
+            this.tabNavigationPage4.Controls.Add(this.duesNoTextEdit8);
+            this.tabNavigationPage4.Controls.Add(this.simpleButton13);
+            this.tabNavigationPage4.Controls.Add(this.labelControl15);
+            this.tabNavigationPage4.Controls.Add(this.labelControl21);
+            this.tabNavigationPage4.Controls.Add(this.duesPayEdit5);
+            this.tabNavigationPage4.Controls.Add(this.labelControl22);
+            this.tabNavigationPage4.Controls.Add(this.labelControl23);
+            this.tabNavigationPage4.Controls.Add(this.labelControl24);
+            this.tabNavigationPage4.Name = "tabNavigationPage4";
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1004, 724);
+            // 
+            // labelControl20
+            // 
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Appearance.Options.UseForeColor = true;
+            this.labelControl20.Location = new System.Drawing.Point(418, 31);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(168, 41);
+            this.labelControl20.TabIndex = 12;
+            this.labelControl20.Text = "Aidat Ekle";
+            // 
+            // duesAprtBoxEdit1
+            // 
+            this.duesAprtBoxEdit1.Location = new System.Drawing.Point(534, 291);
+            this.duesAprtBoxEdit1.Name = "duesAprtBoxEdit1";
+            this.duesAprtBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.duesAprtBoxEdit1.Size = new System.Drawing.Size(136, 20);
+            this.duesAprtBoxEdit1.TabIndex = 51;
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(534, 321);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
+            this.dateEdit1.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dateEdit1.Size = new System.Drawing.Size(136, 20);
+            this.dateEdit1.TabIndex = 50;
+            // 
+            // totalTextEdit6
+            // 
+            this.totalTextEdit6.Location = new System.Drawing.Point(534, 410);
+            this.totalTextEdit6.Name = "totalTextEdit6";
+            this.totalTextEdit6.Properties.Mask.EditMask = "Kullanici";
+            this.totalTextEdit6.Properties.ReadOnly = true;
+            this.totalTextEdit6.Size = new System.Drawing.Size(136, 20);
+            this.totalTextEdit6.TabIndex = 49;
+            this.totalTextEdit6.EditValueChanged += new System.EventHandler(this.totalTextEdit6_EditValueChanged);
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Appearance.Options.UseForeColor = true;
+            this.labelControl19.Location = new System.Drawing.Point(387, 405);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(141, 24);
+            this.labelControl19.TabIndex = 48;
+            this.labelControl19.Text = "Toplam Tutar:";
+            // 
+            // dmrbsTextEdit4
+            // 
+            this.dmrbsTextEdit4.Location = new System.Drawing.Point(534, 380);
+            this.dmrbsTextEdit4.Name = "dmrbsTextEdit4";
+            this.dmrbsTextEdit4.Properties.Mask.EditMask = "Kullanici";
+            this.dmrbsTextEdit4.Size = new System.Drawing.Size(136, 20);
+            this.dmrbsTextEdit4.TabIndex = 47;
+            // 
+            // duesNoTextEdit8
+            // 
+            this.duesNoTextEdit8.Location = new System.Drawing.Point(534, 260);
+            this.duesNoTextEdit8.Name = "duesNoTextEdit8";
+            this.duesNoTextEdit8.Properties.Mask.EditMask = "Kullanici";
+            this.duesNoTextEdit8.Size = new System.Drawing.Size(136, 20);
+            this.duesNoTextEdit8.TabIndex = 46;
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.Location = new System.Drawing.Point(550, 470);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(93, 33);
+            this.simpleButton13.TabIndex = 45;
+            this.simpleButton13.Text = "Onayla";
+            this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Appearance.Options.UseForeColor = true;
+            this.labelControl15.Location = new System.Drawing.Point(436, 256);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(92, 24);
+            this.labelControl15.TabIndex = 43;
+            this.labelControl15.Text = "Aidat No:";
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl21.Appearance.Options.UseFont = true;
+            this.labelControl21.Appearance.Options.UseForeColor = true;
+            this.labelControl21.Location = new System.Drawing.Point(335, 375);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(193, 24);
+            this.labelControl21.TabIndex = 37;
+            this.labelControl21.Text = "Demirbas Giderleri:";
+            // 
+            // duesPayEdit5
+            // 
+            this.duesPayEdit5.Location = new System.Drawing.Point(534, 350);
+            this.duesPayEdit5.Name = "duesPayEdit5";
+            this.duesPayEdit5.Properties.Mask.EditMask = "Kullanici";
+            this.duesPayEdit5.Size = new System.Drawing.Size(136, 20);
+            this.duesPayEdit5.TabIndex = 36;
+            // 
+            // labelControl22
+            // 
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl22.Appearance.Options.UseFont = true;
+            this.labelControl22.Appearance.Options.UseForeColor = true;
+            this.labelControl22.Location = new System.Drawing.Point(405, 345);
+            this.labelControl22.Name = "labelControl22";
+            this.labelControl22.Size = new System.Drawing.Size(123, 24);
+            this.labelControl22.TabIndex = 35;
+            this.labelControl22.Text = "Aidat Ucreti:";
+            // 
+            // labelControl23
+            // 
+            this.labelControl23.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl23.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl23.Appearance.Options.UseFont = true;
+            this.labelControl23.Appearance.Options.UseForeColor = true;
+            this.labelControl23.Location = new System.Drawing.Point(470, 316);
+            this.labelControl23.Name = "labelControl23";
+            this.labelControl23.Size = new System.Drawing.Size(58, 24);
+            this.labelControl23.TabIndex = 33;
+            this.labelControl23.Text = "Tarih:";
+            // 
+            // labelControl24
+            // 
+            this.labelControl24.Appearance.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelControl24.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelControl24.Appearance.Options.UseFont = true;
+            this.labelControl24.Appearance.Options.UseForeColor = true;
+            this.labelControl24.Location = new System.Drawing.Point(368, 286);
+            this.labelControl24.Name = "labelControl24";
+            this.labelControl24.Size = new System.Drawing.Size(160, 24);
+            this.labelControl24.TabIndex = 31;
+            this.labelControl24.Text = "Daire Numarasi:";
+            // 
             // gradientPanel4
             // 
             this.gradientPanel4.Angle = 40F;
@@ -698,11 +1073,19 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(65, 8);
+            this.labelControl2.Location = new System.Drawing.Point(65, 360);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(183, 33);
             this.labelControl2.TabIndex = 11;
             this.labelControl2.Text = "Aidat İşlemleri";
+            // 
+            // personNavigationPage
+            // 
+            this.personNavigationPage.Caption = "personNavigationPage";
+            this.personNavigationPage.Controls.Add(this.gradientPanel7);
+            this.personNavigationPage.Controls.Add(this.gradientPanel5);
+            this.personNavigationPage.Name = "personNavigationPage";
+            this.personNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
             // gradientPanel7
             // 
@@ -1078,18 +1461,6 @@
             this.labelControl1.TabIndex = 10;
             this.labelControl1.Text = "Kişi İşlemleri";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(200, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(804, 724);
-            this.dataGridView2.TabIndex = 1;
-            // 
             // MainForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -1108,31 +1479,51 @@
             this.navigationFrame.ResumeLayout(false);
             this.homePageNavigationPage.ResumeLayout(false);
             this.homeNavigationPage.ResumeLayout(false);
-            this.carNavigationPage.ResumeLayout(false);
-            this.duesNavigationPage.ResumeLayout(false);
-            this.personNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).EndInit();
             this.tabPane2.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
-            this.tabNavigationPage2.ResumeLayout(false);
-            this.tabNavigationPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
-            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
+            this.groupControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            this.tabNavigationPage2.ResumeLayout(false);
+            this.tabNavigationPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentPersonComboBoxEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentHostComboBoxEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.floorUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentStatusComboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentHostComboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentPersonComboBoxEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).EndInit();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
+            this.carNavigationPage.ResumeLayout(false);
             this.gradientPanel3.ResumeLayout(false);
             this.gradientPanel3.PerformLayout();
+            this.duesNavigationPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabPane3)).EndInit();
+            this.tabPane3.ResumeLayout(false);
+            this.tabNavigationPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            this.tabNavigationPage4.ResumeLayout(false);
+            this.tabNavigationPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.duesAprtBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.totalTextEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dmrbsTextEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duesNoTextEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duesPayEdit5.Properties)).EndInit();
             this.gradientPanel4.ResumeLayout(false);
             this.gradientPanel4.PerformLayout();
+            this.personNavigationPage.ResumeLayout(false);
             this.gradientPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
@@ -1153,7 +1544,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nameTextEdit.Properties)).EndInit();
             this.gradientPanel5.ResumeLayout(false);
             this.gradientPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1244,5 +1634,33 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.ComboBoxEdit apartmentStatusComboBoxEdit1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private DevExpress.XtraBars.Navigation.TabPane tabPane3;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage3;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.GroupControl groupControl6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl21;
+        private DevExpress.XtraEditors.TextEdit duesPayEdit5;
+        private DevExpress.XtraEditors.LabelControl labelControl22;
+        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraEditors.LabelControl labelControl24;
+        private DevExpress.XtraEditors.TextEdit totalTextEdit6;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.TextEdit dmrbsTextEdit4;
+        private DevExpress.XtraEditors.TextEdit duesNoTextEdit8;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.ComboBoxEdit duesAprtBoxEdit1;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton14;
     }
 }
