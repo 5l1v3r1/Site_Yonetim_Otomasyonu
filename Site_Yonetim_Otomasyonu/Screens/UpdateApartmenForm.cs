@@ -8,6 +8,8 @@ namespace Site_Yonetim_Otomasyonu.Screens
     
     public partial class UpdateApartmenForm : DevExpress.XtraEditors.XtraForm
     {
+        public string whereApartment;
+
         public UpdateApartmenForm()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
                     ", Daire_Durumu='" + apartmentStatusComboBoxEdit1.Text + "' " +
                     ", Daire_Sahibi='" + apartmentHostComboBoxEdit2.Text + "' " +
                     ", Daire_Sakini='" + apartmentPersonComboBoxEdit3.Text + "' " +
-                    ", Kat='" + floorUpDown1.Text + "' ";
+                    ", Kat='" + floorUpDown1.Text + "' WHERE Daire_Numarasi='"+whereApartment+"'";
 
                 SqlCommand cmd = new SqlCommand(mySQL, connection);
                 cmd.ExecuteNonQuery();

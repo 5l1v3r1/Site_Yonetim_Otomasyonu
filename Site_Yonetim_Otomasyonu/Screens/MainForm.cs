@@ -21,6 +21,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
         public MainForm()
         {
             InitializeComponent();
+
             ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                 "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
@@ -31,20 +32,27 @@ namespace Site_Yonetim_Otomasyonu.Screens
             ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
                 ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat");
 
-            ComboBoxItemFromDatabase();
 
+            ShowCarData("SELECT Arac_Plaka as 'Aracin Plakasi',Marka,Model,Daire_Numarasi as 'Daire Numarasi'" +
+                ",Irtibat_No as 'Irtibat Numarasi',Arac_ID FROM Arac");
+
+
+            ComboBoxItemFromDatabase();
             ComboBoxItemFromDatabase2();
+            ComboBoxDuesFromDatabase();
 
             connection.Close();
         }
 
         public void ComboBoxDuesFromDatabase()
         {
+            duesAprtBoxEdit1.Properties.Items.Clear();
+            carApComboBoxEdit3.Properties.Items.Clear();
 
             connection.Open();
             sqlCommand = connection.CreateCommand();
             sqlCommand.CommandType = CommandType.Text;
-            sqlCommand.CommandText = "SELECT Ad,Soyad FROM Kisi WHERE Daire_Sahibi='Sahip'";
+            sqlCommand.CommandText = "SELECT Daire_Numarasi FROM Daire ";
 
 
             DataTable dataTable = new DataTable();
@@ -52,14 +60,12 @@ namespace Site_Yonetim_Otomasyonu.Screens
             sqlDataAdapter.Fill(dataTable);
             foreach (DataRow dr in dataTable.Rows)
             {
-                apartmentHostComboBoxEdit2.Properties.Items.Add(dr["Ad"].ToString() + " " + dr["Soyad"].ToString());
+                duesAprtBoxEdit1.Properties.Items.Add(dr["Daire_Numarasi"].ToString());
+                carApComboBoxEdit3.Properties.Items.Add(dr["Daire_Numarasi"].ToString());
             }
             connection.Close();
 
         }
-
-
-
 
         public void ComboBoxItemFromDatabase()
         {
@@ -136,6 +142,16 @@ namespace Site_Yonetim_Otomasyonu.Screens
             sqlDataAdapter.Fill(dataSet);
 
             dataGridView3.DataSource = dataSet.Tables[0];
+
+        }
+        public void ShowCarData(string data)
+        {
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(data, connection);
+            DataSet dataSet = new DataSet();
+            sqlDataAdapter.Fill(dataSet);
+
+            dataGridView4.DataSource = dataSet.Tables[0];
 
         }
 
@@ -425,6 +441,158 @@ namespace Site_Yonetim_Otomasyonu.Screens
                 ShowDuesData("SELECT Aidat_No as'Aidat No',Daire_Numarasi as 'Daire No',Tarih,Aidat_Ucreti as 'Aidat Ucreti'" +
                ",Demirbas_Giderleri as 'Demirbas Giderleri(TL)',Toplam_Tutar as 'Toplam Tutar(TL)'FROM Aidat Where Daire_Numarasi='" + textEdit3.Text + "'");
             }
+        }
+
+        private void tabNavigationPage6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void simpleButton19_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(carPTextEdit7.Text)&&
+                !string.IsNullOrEmpty(carBrandTextEdit5.Text) &&
+                !string.IsNullOrEmpty(carModelTextEdit6.Text) &&
+                !string.IsNullOrEmpty(carApComboBoxEdit3.Text) &&
+                !string.IsNullOrEmpty(carTelTextEdit8.Text))
+            {
+                //check car number 
+                string sql = "SELECT * FROM Arac WHERE Arac_Plaka = '" + carPTextEdit7.Text + "'";
+                DataTable checkCarNumber = Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(sql);
+                if (checkCarNumber.Rows.Count > 0)
+                {
+                    MessageBox.Show("Araba Onceden Kayitli Farkli Bir Plaka Deneyin",
+                        "Uyari",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+
+                    string mySQL = string.Empty;
+
+                    mySQL = "INSERT INTO Arac (Arac_Plaka, Marka, Model, Daire_Numarasi,Irtibat_No) " +
+                        "VALUES('" + carPTextEdit7.Text + "','" + carBrandTextEdit5.Text +
+                        "','" + carModelTextEdit6.Text + "','" + carApComboBoxEdit3.Text +
+                        "','" + carTelTextEdit8.Text + "')";
+
+                    Site_Yonetim_Otomasyonu.Connection.ServerConnection.ExecuteSQL(mySQL);
+
+                    MessageBox.Show("Basariyla Araci Kaydettiniz :)",
+                   "Basarirli",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lutfen Tum Alanlari Doldurunuz!",
+                               "Hata",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void groupControl8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void simpleButton17_Click(object sender, EventArgs e)
+        {
+            tabPane4.SelectNextPage();
+        
+        }
+
+        private void simpleButton20_Click(object sender, EventArgs e)
+        {
+            ShowCarData("SELECT Arac_Plaka as 'Aracin Plakasi',Marka,Model,Daire_Numarasi as 'Daire Numarasi'" +
+                ",Irtibat_No as 'Irtibat Numarasi',Arac_ID FROM Arac");
+
+        }
+
+        private void simpleButton15_Click(object sender, EventArgs e)
+        {
+            if (this.dataGridView4.SelectedRows.Count > 0)
+            {
+                connection.Open();
+                dataGridView4.Rows.RemoveAt(this.dataGridView4.SelectedRows[0].Index);
+                string selectedCar = dataGridView4.CurrentRow.Cells[5].Value.ToString();
+                SqlCommand cmd = new SqlCommand("DELETE FROM Arac WHERE Arac_ID =" + selectedCar + "", connection);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Arac Silindi!", "Harika", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Arac Secin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void simpleButton16_Click(object sender, EventArgs e)
+        {
+            CarUpdate carUpdate = new CarUpdate();
+
+            carUpdate.carPTextEdit7.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
+            carUpdate.carBrandTextEdit5.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
+            carUpdate.carModelTextEdit6.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
+            carUpdate.carApComboBoxEdit3.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
+            carUpdate.carTelTextEdit8.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
+
+            carUpdate.whereCar= dataGridView4.CurrentRow.Cells[5].Value.ToString();
+
+            carUpdate.Show();
+
+
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            UpdateApartmenForm updateApartmenForm = new UpdateApartmenForm();
+
+            updateApartmenForm.apartmentNumtextEdit.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            updateApartmenForm.apartmentStatusComboBoxEdit1.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            updateApartmenForm.apartmentHostComboBoxEdit2.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+            updateApartmenForm.floorUpDown1.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
+
+            updateApartmenForm.whereApartment = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+
+            if (this.dataGridView1.SelectedRows.Count > 0)
+            {
+                connection.Open();
+                dataGridView2.Rows.RemoveAt(this.dataGridView2.SelectedRows[0].Index);
+                string selectedUser = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                SqlCommand cmd = new SqlCommand("DELETE FROM Daire WHERE Daire_Numarasi =" + selectedUser + "", connection);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Daire Silindi!", "Harika", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Daire Secin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void simpleButton21_Click(object sender, EventArgs e)
+        {
+            ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
+              "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire");
+
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton6_Click(object sender, EventArgs e)
+        {
+            tabPane2.SelectNextPage();
+
         }
     }
 }
