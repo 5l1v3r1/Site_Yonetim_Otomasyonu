@@ -29,11 +29,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement20 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.homePageTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
@@ -167,6 +167,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.gradientPanel5 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
             this.homeNavigationPage.SuspendLayout();
@@ -291,9 +292,9 @@
             this.homePageTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(156)))));
             this.homePageTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.homePageTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Red;
-            tileItemElement11.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_home_32px;
-            tileItemElement11.Text = "Anasayfa";
-            this.homePageTileBarItem.Elements.Add(tileItemElement11);
+            tileItemElement16.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_home_32px;
+            tileItemElement16.Text = "Anasayfa";
+            this.homePageTileBarItem.Elements.Add(tileItemElement16);
             this.homePageTileBarItem.Name = "homePageTileBarItem";
             // 
             // homeTileBarItem
@@ -301,9 +302,9 @@
             this.homeTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.homeTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.homeTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement12.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_apartment_32px;
-            tileItemElement12.Text = "Daire";
-            this.homeTileBarItem.Elements.Add(tileItemElement12);
+            tileItemElement17.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_apartment_32px;
+            tileItemElement17.Text = "Daire";
+            this.homeTileBarItem.Elements.Add(tileItemElement17);
             this.homeTileBarItem.Id = 2;
             this.homeTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.homeTileBarItem.Name = "homeTileBarItem";
@@ -313,9 +314,9 @@
             this.carBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(109)))), ((int)(((byte)(0)))));
             this.carBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.carBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement13.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_car_32px;
-            tileItemElement13.Text = "Araç";
-            this.carBarItem.Elements.Add(tileItemElement13);
+            tileItemElement18.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_car_32px;
+            tileItemElement18.Text = "Araç";
+            this.carBarItem.Elements.Add(tileItemElement18);
             this.carBarItem.Id = 3;
             this.carBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.carBarItem.Name = "carBarItem";
@@ -325,9 +326,9 @@
             this.duesBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(196)))));
             this.duesBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.duesBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement14.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_paper_money_32px;
-            tileItemElement14.Text = "Aidat";
-            this.duesBarItem.Elements.Add(tileItemElement14);
+            tileItemElement19.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_paper_money_32px;
+            tileItemElement19.Text = "Aidat";
+            this.duesBarItem.Elements.Add(tileItemElement19);
             this.duesBarItem.Id = 4;
             this.duesBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.duesBarItem.Name = "duesBarItem";
@@ -337,9 +338,9 @@
             this.personBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.personBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
             this.personBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement15.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_person_32px;
-            tileItemElement15.Text = "Kişi";
-            this.personBarItem.Elements.Add(tileItemElement15);
+            tileItemElement20.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_person_32px;
+            tileItemElement20.Text = "Kişi";
+            this.personBarItem.Elements.Add(tileItemElement20);
             this.personBarItem.Id = 5;
             this.personBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
             this.personBarItem.Name = "personBarItem";
@@ -1507,6 +1508,7 @@
             this.groupControl2.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.groupControl2.Appearance.Options.UseBackColor = true;
             this.groupControl2.CaptionLocation = DevExpress.Utils.Locations.Top;
+            this.groupControl2.Controls.Add(this.simpleButton22);
             this.groupControl2.Controls.Add(this.simpleButton3);
             this.groupControl2.Controls.Add(this.simpleButton2);
             this.groupControl2.Controls.Add(this.simpleButton1);
@@ -1519,7 +1521,7 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(31, 329);
+            this.simpleButton3.Location = new System.Drawing.Point(30, 237);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(124, 49);
             this.simpleButton3.TabIndex = 22;
@@ -1528,7 +1530,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(31, 178);
+            this.simpleButton2.Location = new System.Drawing.Point(31, 132);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(124, 49);
             this.simpleButton2.TabIndex = 21;
@@ -1804,6 +1806,15 @@
             this.labelControl1.TabIndex = 10;
             this.labelControl1.Text = "Kişi İşlemleri";
             // 
+            // simpleButton22
+            // 
+            this.simpleButton22.Location = new System.Drawing.Point(30, 342);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton22.TabIndex = 23;
+            this.simpleButton22.Text = "Yenile";
+            this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
+            // 
             // MainForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -2047,5 +2058,6 @@
         private DevExpress.XtraEditors.TextEdit carModelTextEdit6;
         private DevExpress.XtraEditors.SimpleButton simpleButton20;
         private DevExpress.XtraEditors.SimpleButton simpleButton21;
+        private DevExpress.XtraEditors.SimpleButton simpleButton22;
     }
 }

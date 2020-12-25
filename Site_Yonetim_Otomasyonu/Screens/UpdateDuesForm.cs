@@ -15,6 +15,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 {
     public partial class UpdateDuesForm : XtraForm
     {
+        public string whereDues;
         public UpdateDuesForm()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
                     ", Tarih='" + dateEdit1.Text + "' " +
                     ", Aidat_Ucreti='" + duesPayEdit5.Text + "' " +
                     ", Demirbas_Giderleri='" + dmrbsTextEdit4.Text + "'," +
-                    "  Toplam_Tutar = '"+totalTextEdit6.Text+"'";
+                    "  Toplam_Tutar = '"+totalTextEdit6.Text+"' WHERE Aidat_No='"+ whereDues +"'";
 
                 SqlCommand cmd = new SqlCommand(mySQL, connection);
                 cmd.ExecuteNonQuery();

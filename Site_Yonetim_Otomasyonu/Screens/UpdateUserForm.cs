@@ -15,6 +15,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 {
     public partial class UpdateUserForm : XtraForm
     {
+        public string whereUser;
         SqlConnection connection = new SqlConnection(ServerConnection.stringConnection);
         public UpdateUserForm()
         {
@@ -56,7 +57,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
                 mainForm.ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
-                "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
+                "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi WHERE='"+ whereUser +"'");
 
                    MessageBox.Show("Basariyla Guncellendi :)",
                    "Guncelendi",

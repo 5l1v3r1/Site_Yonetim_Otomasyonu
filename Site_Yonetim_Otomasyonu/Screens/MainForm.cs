@@ -275,6 +275,8 @@ namespace Site_Yonetim_Otomasyonu.Screens
             updateUserForm.explanationTextBox.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             updateUserForm.adressTextBox.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
 
+            updateUserForm.whereUser = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
             updateUserForm.Show();
         }
 
@@ -424,6 +426,8 @@ namespace Site_Yonetim_Otomasyonu.Screens
             updateDuesForm.duesPayEdit5.Text = dataGridView3.CurrentRow.Cells[3].Value.ToString();
             updateDuesForm.dmrbsTextEdit4.Text = dataGridView3.CurrentRow.Cells[4].Value.ToString();
             updateDuesForm.totalTextEdit6.Text = dataGridView3.CurrentRow.Cells[5].Value.ToString();
+
+            updateDuesForm.whereDues = dataGridView3.CurrentRow.Cells[0].Value.ToString();
 
             updateDuesForm.Show();
 
@@ -586,6 +590,26 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
         private void simpleButton7_Click(object sender, EventArgs e)
         {
+            if (radioButton6.Checked && !string.IsNullOrEmpty(textEdit1.Text))
+            {
+                ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
+             "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire WHERE Daire_Durumu='"+textEdit1.Text+"'");
+            }
+            else if (radioButton5.Checked && !string.IsNullOrEmpty(textEdit1.Text))
+            {
+                ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
+             "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire WHERE Daire_Sahibi='" + textEdit1.Text + "'");
+            }
+            else if (radioButton4.Checked && !string.IsNullOrEmpty(textEdit1.Text))
+            {
+                ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
+              "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire WHERE Daire_Sakini='" + textEdit1.Text + "'");
+            }
+            else
+            {
+                MessageBox.Show("Filtreleme için bir aranan değer giriniz!");
+            }
+
 
         }
 
@@ -593,6 +617,13 @@ namespace Site_Yonetim_Otomasyonu.Screens
         {
             tabPane2.SelectNextPage();
 
+        }
+
+        private void simpleButton22_Click(object sender, EventArgs e)
+        {
+            ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
+                "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
+                "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
         }
     }
 }
