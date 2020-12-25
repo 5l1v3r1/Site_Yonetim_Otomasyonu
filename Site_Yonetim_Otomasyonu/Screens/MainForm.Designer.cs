@@ -29,18 +29,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement20 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement26 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement27 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement28 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement29 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement30 = new DevExpress.XtraEditors.TileItemElement();
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
-            this.homePageTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.homeTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.carBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.duesBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
-            this.personBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.homePageNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.homeNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -71,8 +66,6 @@
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.apartmentNumtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.carNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabPane4 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -101,8 +94,6 @@
             this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
             this.carBrandTextEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.gradientPanel3 = new Site_Yonetim_Otomasyonu.GradientPanel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.duesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabPane3 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -132,15 +123,38 @@
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.personNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.homePageTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.homeTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.carBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.duesBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.personBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();
+            this.groupControl9 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl36 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel9 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl37 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel8 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl35 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel6 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel2 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.gradientPanel3 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gradientPanel4 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.personNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.gradientPanel7 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.goster = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -167,9 +181,9 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.gradientPanel5 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
+            this.homePageNavigationPage.SuspendLayout();
             this.homeNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).BeginInit();
             this.tabPane2.SuspendLayout();
@@ -186,7 +200,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floorUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentStatusComboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).BeginInit();
-            this.gradientPanel1.SuspendLayout();
             this.carNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane4)).BeginInit();
             this.tabPane4.SuspendLayout();
@@ -203,7 +216,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.carModelTextEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carApComboBoxEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBrandTextEdit5.Properties)).BeginInit();
-            this.gradientPanel3.SuspendLayout();
             this.duesNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane3)).BeginInit();
             this.tabPane3.SuspendLayout();
@@ -222,8 +234,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dmrbsTextEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duesNoTextEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duesPayEdit5.Properties)).BeginInit();
-            this.gradientPanel4.SuspendLayout();
             this.personNavigationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).BeginInit();
+            this.groupControl9.SuspendLayout();
+            this.gradientPanel9.SuspendLayout();
+            this.gradientPanel8.SuspendLayout();
+            this.gradientPanel6.SuspendLayout();
+            this.gradientPanel2.SuspendLayout();
+            this.gradientPanel1.SuspendLayout();
+            this.gradientPanel3.SuspendLayout();
+            this.gradientPanel4.SuspendLayout();
             this.gradientPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -287,64 +307,6 @@
             this.tileBarGroupTables.Name = "tileBarGroupTables";
             this.tileBarGroupTables.Text = "TABLES";
             // 
-            // homePageTileBarItem
-            // 
-            this.homePageTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(156)))));
-            this.homePageTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.homePageTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Red;
-            tileItemElement16.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_home_32px;
-            tileItemElement16.Text = "Anasayfa";
-            this.homePageTileBarItem.Elements.Add(tileItemElement16);
-            this.homePageTileBarItem.Name = "homePageTileBarItem";
-            // 
-            // homeTileBarItem
-            // 
-            this.homeTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.homeTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.homeTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement17.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_apartment_32px;
-            tileItemElement17.Text = "Daire";
-            this.homeTileBarItem.Elements.Add(tileItemElement17);
-            this.homeTileBarItem.Id = 2;
-            this.homeTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.homeTileBarItem.Name = "homeTileBarItem";
-            // 
-            // carBarItem
-            // 
-            this.carBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(109)))), ((int)(((byte)(0)))));
-            this.carBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.carBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement18.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_car_32px;
-            tileItemElement18.Text = "Araç";
-            this.carBarItem.Elements.Add(tileItemElement18);
-            this.carBarItem.Id = 3;
-            this.carBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.carBarItem.Name = "carBarItem";
-            // 
-            // duesBarItem
-            // 
-            this.duesBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(196)))));
-            this.duesBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.duesBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement19.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_paper_money_32px;
-            tileItemElement19.Text = "Aidat";
-            this.duesBarItem.Elements.Add(tileItemElement19);
-            this.duesBarItem.Id = 4;
-            this.duesBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.duesBarItem.Name = "duesBarItem";
-            // 
-            // personBarItem
-            // 
-            this.personBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.personBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.personBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-            tileItemElement20.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_person_32px;
-            tileItemElement20.Text = "Kişi";
-            this.personBarItem.Elements.Add(tileItemElement20);
-            this.personBarItem.Id = 5;
-            this.personBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
-            this.personBarItem.Name = "personBarItem";
-            // 
             // navigationFrame
             // 
             this.navigationFrame.Controls.Add(this.homePageNavigationPage);
@@ -369,6 +331,7 @@
             // 
             // homePageNavigationPage
             // 
+            this.homePageNavigationPage.Controls.Add(this.groupControl9);
             this.homePageNavigationPage.Name = "homePageNavigationPage";
             this.homePageNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
@@ -698,30 +661,6 @@
             this.labelControl18.TabIndex = 31;
             this.labelControl18.Text = "Daire Numarasi:";
             // 
-            // gradientPanel1
-            // 
-            this.gradientPanel1.Angle = 40F;
-            this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
-            this.gradientPanel1.Controls.Add(this.labelControl4);
-            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gradientPanel1.Location = new System.Drawing.Point(1004, 0);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(312, 753);
-            this.gradientPanel1.TabIndex = 8;
-            this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(66, 360);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(181, 33);
-            this.labelControl4.TabIndex = 11;
-            this.labelControl4.Text = "Daire İşlemleri";
-            // 
             // carNavigationPage
             // 
             this.carNavigationPage.Caption = "carNavigationPage";
@@ -1041,30 +980,6 @@
             this.labelControl30.Size = new System.Drawing.Size(115, 24);
             this.labelControl30.TabIndex = 31;
             this.labelControl30.Text = "Arac Plaka:";
-            // 
-            // gradientPanel3
-            // 
-            this.gradientPanel3.Angle = 40F;
-            this.gradientPanel3.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
-            this.gradientPanel3.Controls.Add(this.labelControl3);
-            this.gradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gradientPanel3.Location = new System.Drawing.Point(1004, 0);
-            this.gradientPanel3.Name = "gradientPanel3";
-            this.gradientPanel3.Size = new System.Drawing.Size(312, 753);
-            this.gradientPanel3.TabIndex = 9;
-            this.gradientPanel3.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(70, 360);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(173, 33);
-            this.labelControl3.TabIndex = 11;
-            this.labelControl3.Text = "Araç İşlemleri";
             // 
             // duesNavigationPage
             // 
@@ -1399,6 +1314,289 @@
             this.labelControl24.TabIndex = 31;
             this.labelControl24.Text = "Daire Numarasi:";
             // 
+            // personNavigationPage
+            // 
+            this.personNavigationPage.Caption = "personNavigationPage";
+            this.personNavigationPage.Controls.Add(this.gradientPanel7);
+            this.personNavigationPage.Controls.Add(this.gradientPanel5);
+            this.personNavigationPage.Name = "personNavigationPage";
+            this.personNavigationPage.Size = new System.Drawing.Size(1316, 753);
+            // 
+            // homePageTileBarItem
+            // 
+            this.homePageTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(156)))));
+            this.homePageTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.homePageTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Red;
+            tileItemElement26.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_home_32px;
+            tileItemElement26.Text = "Anasayfa";
+            this.homePageTileBarItem.Elements.Add(tileItemElement26);
+            this.homePageTileBarItem.Name = "homePageTileBarItem";
+            // 
+            // homeTileBarItem
+            // 
+            this.homeTileBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.homeTileBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.homeTileBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement27.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_apartment_32px;
+            tileItemElement27.Text = "Daire";
+            this.homeTileBarItem.Elements.Add(tileItemElement27);
+            this.homeTileBarItem.Id = 2;
+            this.homeTileBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.homeTileBarItem.Name = "homeTileBarItem";
+            // 
+            // carBarItem
+            // 
+            this.carBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(109)))), ((int)(((byte)(0)))));
+            this.carBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.carBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement28.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_car_32px;
+            tileItemElement28.Text = "Araç";
+            this.carBarItem.Elements.Add(tileItemElement28);
+            this.carBarItem.Id = 3;
+            this.carBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.carBarItem.Name = "carBarItem";
+            // 
+            // duesBarItem
+            // 
+            this.duesBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(196)))));
+            this.duesBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.duesBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement29.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_paper_money_32px;
+            tileItemElement29.Text = "Aidat";
+            this.duesBarItem.Elements.Add(tileItemElement29);
+            this.duesBarItem.Id = 4;
+            this.duesBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.duesBarItem.Name = "duesBarItem";
+            // 
+            // personBarItem
+            // 
+            this.personBarItem.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.personBarItem.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.personBarItem.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement30.ImageOptions.Image = global::Site_Yonetim_Otomasyonu.Properties.Resources.icons8_person_32px;
+            tileItemElement30.Text = "Kişi";
+            this.personBarItem.Elements.Add(tileItemElement30);
+            this.personBarItem.Id = 5;
+            this.personBarItem.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Wide;
+            this.personBarItem.Name = "personBarItem";
+            // 
+            // groupControl9
+            // 
+            this.groupControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.groupControl9.Appearance.Options.UseBackColor = true;
+            this.groupControl9.AppearanceCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.groupControl9.AppearanceCaption.Options.UseBackColor = true;
+            this.groupControl9.Controls.Add(this.gradientPanel9);
+            this.groupControl9.Controls.Add(this.labelControl38);
+            this.groupControl9.Controls.Add(this.gradientPanel8);
+            this.groupControl9.Controls.Add(this.labelControl36);
+            this.groupControl9.Controls.Add(this.gradientPanel6);
+            this.groupControl9.Controls.Add(this.labelControl34);
+            this.groupControl9.Controls.Add(this.gradientPanel2);
+            this.groupControl9.Controls.Add(this.labelControl31);
+            this.groupControl9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupControl9.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl9.Location = new System.Drawing.Point(1054, 0);
+            this.groupControl9.Name = "groupControl9";
+            this.groupControl9.Size = new System.Drawing.Size(262, 753);
+            this.groupControl9.TabIndex = 0;
+            this.groupControl9.Text = "Istatistikller";
+            this.groupControl9.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl9_Paint);
+            // 
+            // labelControl31
+            // 
+            this.labelControl31.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl31.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl31.Appearance.Options.UseFont = true;
+            this.labelControl31.Appearance.Options.UseForeColor = true;
+            this.labelControl31.Location = new System.Drawing.Point(59, 30);
+            this.labelControl31.Name = "labelControl31";
+            this.labelControl31.Size = new System.Drawing.Size(150, 19);
+            this.labelControl31.TabIndex = 11;
+            this.labelControl31.Text = "Toplam Daire Sayisi";
+            // 
+            // labelControl34
+            // 
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl34.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl34.Appearance.Options.UseFont = true;
+            this.labelControl34.Appearance.Options.UseForeColor = true;
+            this.labelControl34.Location = new System.Drawing.Point(62, 233);
+            this.labelControl34.Name = "labelControl34";
+            this.labelControl34.Size = new System.Drawing.Size(147, 19);
+            this.labelControl34.TabIndex = 13;
+            this.labelControl34.Text = "Toplam Arac Sayisi";
+            // 
+            // labelControl36
+            // 
+            this.labelControl36.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl36.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl36.Appearance.Options.UseFont = true;
+            this.labelControl36.Appearance.Options.UseForeColor = true;
+            this.labelControl36.Location = new System.Drawing.Point(58, 436);
+            this.labelControl36.Name = "labelControl36";
+            this.labelControl36.Size = new System.Drawing.Size(151, 19);
+            this.labelControl36.TabIndex = 15;
+            this.labelControl36.Text = "Toplam Aidat Sayisi";
+            // 
+            // labelControl38
+            // 
+            this.labelControl38.Appearance.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl38.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.labelControl38.Appearance.Options.UseFont = true;
+            this.labelControl38.Appearance.Options.UseForeColor = true;
+            this.labelControl38.Location = new System.Drawing.Point(76, 639);
+            this.labelControl38.Name = "labelControl38";
+            this.labelControl38.Size = new System.Drawing.Size(133, 19);
+            this.labelControl38.TabIndex = 17;
+            this.labelControl38.Text = "Toplam Kisi Sayisi";
+            // 
+            // gradientPanel9
+            // 
+            this.gradientPanel9.Angle = 0F;
+            this.gradientPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.gradientPanel9.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanel9.Controls.Add(this.labelControl37);
+            this.gradientPanel9.Location = new System.Drawing.Point(58, 664);
+            this.gradientPanel9.Name = "gradientPanel9";
+            this.gradientPanel9.Size = new System.Drawing.Size(151, 66);
+            this.gradientPanel9.TabIndex = 18;
+            this.gradientPanel9.TopColor = System.Drawing.Color.Empty;
+            // 
+            // labelControl37
+            // 
+            this.labelControl37.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl37.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl37.Appearance.Options.UseFont = true;
+            this.labelControl37.Appearance.Options.UseForeColor = true;
+            this.labelControl37.Location = new System.Drawing.Point(69, 19);
+            this.labelControl37.Name = "labelControl37";
+            this.labelControl37.Size = new System.Drawing.Size(13, 28);
+            this.labelControl37.TabIndex = 12;
+            this.labelControl37.Text = "1";
+            // 
+            // gradientPanel8
+            // 
+            this.gradientPanel8.Angle = 0F;
+            this.gradientPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(115)))), ((int)(((byte)(196)))));
+            this.gradientPanel8.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanel8.Controls.Add(this.labelControl35);
+            this.gradientPanel8.Location = new System.Drawing.Point(58, 461);
+            this.gradientPanel8.Name = "gradientPanel8";
+            this.gradientPanel8.Size = new System.Drawing.Size(151, 66);
+            this.gradientPanel8.TabIndex = 16;
+            this.gradientPanel8.TopColor = System.Drawing.Color.Empty;
+            // 
+            // labelControl35
+            // 
+            this.labelControl35.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl35.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl35.Appearance.Options.UseFont = true;
+            this.labelControl35.Appearance.Options.UseForeColor = true;
+            this.labelControl35.Location = new System.Drawing.Point(69, 19);
+            this.labelControl35.Name = "labelControl35";
+            this.labelControl35.Size = new System.Drawing.Size(13, 28);
+            this.labelControl35.TabIndex = 12;
+            this.labelControl35.Text = "1";
+            // 
+            // gradientPanel6
+            // 
+            this.gradientPanel6.Angle = 0F;
+            this.gradientPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(109)))), ((int)(((byte)(0)))));
+            this.gradientPanel6.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanel6.Controls.Add(this.labelControl33);
+            this.gradientPanel6.Location = new System.Drawing.Point(57, 258);
+            this.gradientPanel6.Name = "gradientPanel6";
+            this.gradientPanel6.Size = new System.Drawing.Size(151, 66);
+            this.gradientPanel6.TabIndex = 14;
+            this.gradientPanel6.TopColor = System.Drawing.Color.Empty;
+            // 
+            // labelControl33
+            // 
+            this.labelControl33.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl33.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl33.Appearance.Options.UseFont = true;
+            this.labelControl33.Appearance.Options.UseForeColor = true;
+            this.labelControl33.Location = new System.Drawing.Point(69, 19);
+            this.labelControl33.Name = "labelControl33";
+            this.labelControl33.Size = new System.Drawing.Size(13, 28);
+            this.labelControl33.TabIndex = 12;
+            this.labelControl33.Text = "1";
+            this.labelControl33.Click += new System.EventHandler(this.labelControl33_Click);
+            // 
+            // gradientPanel2
+            // 
+            this.gradientPanel2.Angle = 0F;
+            this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gradientPanel2.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanel2.Controls.Add(this.labelControl32);
+            this.gradientPanel2.Location = new System.Drawing.Point(57, 55);
+            this.gradientPanel2.Name = "gradientPanel2";
+            this.gradientPanel2.Size = new System.Drawing.Size(151, 66);
+            this.gradientPanel2.TabIndex = 12;
+            this.gradientPanel2.TopColor = System.Drawing.Color.Empty;
+            // 
+            // labelControl32
+            // 
+            this.labelControl32.Appearance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl32.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl32.Appearance.Options.UseFont = true;
+            this.labelControl32.Appearance.Options.UseForeColor = true;
+            this.labelControl32.Location = new System.Drawing.Point(62, 19);
+            this.labelControl32.Name = "labelControl32";
+            this.labelControl32.Size = new System.Drawing.Size(26, 28);
+            this.labelControl32.TabIndex = 12;
+            this.labelControl32.Text = "10";
+            this.labelControl32.Click += new System.EventHandler(this.labelControl32_Click);
+            // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.Angle = 40F;
+            this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel1.Controls.Add(this.labelControl4);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel1.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel1.TabIndex = 8;
+            this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(66, 360);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(181, 33);
+            this.labelControl4.TabIndex = 11;
+            this.labelControl4.Text = "Daire İşlemleri";
+            // 
+            // gradientPanel3
+            // 
+            this.gradientPanel3.Angle = 40F;
+            this.gradientPanel3.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel3.Controls.Add(this.labelControl3);
+            this.gradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gradientPanel3.Location = new System.Drawing.Point(1004, 0);
+            this.gradientPanel3.Name = "gradientPanel3";
+            this.gradientPanel3.Size = new System.Drawing.Size(312, 753);
+            this.gradientPanel3.TabIndex = 9;
+            this.gradientPanel3.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(70, 360);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(173, 33);
+            this.labelControl3.TabIndex = 11;
+            this.labelControl3.Text = "Araç İşlemleri";
+            // 
             // gradientPanel4
             // 
             this.gradientPanel4.Angle = 40F;
@@ -1422,14 +1620,6 @@
             this.labelControl2.Size = new System.Drawing.Size(183, 33);
             this.labelControl2.TabIndex = 11;
             this.labelControl2.Text = "Aidat İşlemleri";
-            // 
-            // personNavigationPage
-            // 
-            this.personNavigationPage.Caption = "personNavigationPage";
-            this.personNavigationPage.Controls.Add(this.gradientPanel7);
-            this.personNavigationPage.Controls.Add(this.gradientPanel5);
-            this.personNavigationPage.Name = "personNavigationPage";
-            this.personNavigationPage.Size = new System.Drawing.Size(1316, 753);
             // 
             // gradientPanel7
             // 
@@ -1518,6 +1708,15 @@
             this.groupControl2.Size = new System.Drawing.Size(200, 461);
             this.groupControl2.TabIndex = 19;
             this.groupControl2.Text = "Islemler";
+            // 
+            // simpleButton22
+            // 
+            this.simpleButton22.Location = new System.Drawing.Point(30, 342);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.Size = new System.Drawing.Size(124, 49);
+            this.simpleButton22.TabIndex = 23;
+            this.simpleButton22.Text = "Yenile";
+            this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
             // 
             // simpleButton3
             // 
@@ -1806,15 +2005,6 @@
             this.labelControl1.TabIndex = 10;
             this.labelControl1.Text = "Kişi İşlemleri";
             // 
-            // simpleButton22
-            // 
-            this.simpleButton22.Location = new System.Drawing.Point(30, 342);
-            this.simpleButton22.Name = "simpleButton22";
-            this.simpleButton22.Size = new System.Drawing.Size(124, 49);
-            this.simpleButton22.TabIndex = 23;
-            this.simpleButton22.Text = "Yenile";
-            this.simpleButton22.Click += new System.EventHandler(this.simpleButton22_Click);
-            // 
             // MainForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -1831,6 +2021,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
+            this.homePageNavigationPage.ResumeLayout(false);
             this.homeNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).EndInit();
             this.tabPane2.ResumeLayout(false);
@@ -1849,8 +2040,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.floorUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentStatusComboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentNumtextEdit.Properties)).EndInit();
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
             this.carNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane4)).EndInit();
             this.tabPane4.ResumeLayout(false);
@@ -1869,8 +2058,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.carModelTextEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carApComboBoxEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBrandTextEdit5.Properties)).EndInit();
-            this.gradientPanel3.ResumeLayout(false);
-            this.gradientPanel3.PerformLayout();
             this.duesNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane3)).EndInit();
             this.tabPane3.ResumeLayout(false);
@@ -1891,9 +2078,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.dmrbsTextEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.duesNoTextEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.duesPayEdit5.Properties)).EndInit();
+            this.personNavigationPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl9)).EndInit();
+            this.groupControl9.ResumeLayout(false);
+            this.groupControl9.PerformLayout();
+            this.gradientPanel9.ResumeLayout(false);
+            this.gradientPanel9.PerformLayout();
+            this.gradientPanel8.ResumeLayout(false);
+            this.gradientPanel8.PerformLayout();
+            this.gradientPanel6.ResumeLayout(false);
+            this.gradientPanel6.PerformLayout();
+            this.gradientPanel2.ResumeLayout(false);
+            this.gradientPanel2.PerformLayout();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            this.gradientPanel3.ResumeLayout(false);
+            this.gradientPanel3.PerformLayout();
             this.gradientPanel4.ResumeLayout(false);
             this.gradientPanel4.PerformLayout();
-            this.personNavigationPage.ResumeLayout(false);
             this.gradientPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
@@ -2059,5 +2261,18 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton20;
         private DevExpress.XtraEditors.SimpleButton simpleButton21;
         private DevExpress.XtraEditors.SimpleButton simpleButton22;
+        private DevExpress.XtraEditors.GroupControl groupControl9;
+        private GradientPanel gradientPanel2;
+        private DevExpress.XtraEditors.LabelControl labelControl32;
+        private DevExpress.XtraEditors.LabelControl labelControl31;
+        private GradientPanel gradientPanel6;
+        private DevExpress.XtraEditors.LabelControl labelControl33;
+        private DevExpress.XtraEditors.LabelControl labelControl34;
+        private GradientPanel gradientPanel8;
+        private DevExpress.XtraEditors.LabelControl labelControl35;
+        private DevExpress.XtraEditors.LabelControl labelControl36;
+        private GradientPanel gradientPanel9;
+        private DevExpress.XtraEditors.LabelControl labelControl37;
+        private DevExpress.XtraEditors.LabelControl labelControl38;
     }
 }

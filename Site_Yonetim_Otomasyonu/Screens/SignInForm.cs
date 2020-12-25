@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using Site_Yonetim_Otomasyonu.Connection;
 using System.Data;
 using Site_Yonetim_Otomasyonu.Screens;
+using System.Threading;
 
 namespace Site_Yonetim_Otomasyonu
 {
@@ -13,11 +14,11 @@ namespace Site_Yonetim_Otomasyonu
     {
         public LoginForm()
         {
-          /*  Thread thread = new Thread(new ThreadStart(formRun));
+            Thread thread = new Thread(new ThreadStart(formRun));
             thread.Start();
-            Thread.Sleep(5000);*/
+            Thread.Sleep(2000);
             InitializeComponent();
-           //thread.Abort();
+           thread.Abort();
         }
       
         public void formRun()
@@ -35,7 +36,7 @@ namespace Site_Yonetim_Otomasyonu
             SignUpForm signUpForm = new SignUpForm();
             signUpForm.Show();
             this.Hide();
-            
+
         }
 
         private void showPasswordCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -66,8 +67,6 @@ namespace Site_Yonetim_Otomasyonu
                 mySQL = "SELECT * FROM  Kullanicilar WHERE KullaniciAdi ='"
                     + userNameTextEdit.Text + "' AND Sifre ='"
                     + passwordTextEdit.Text + "'";
-
-
 
                 DataTable userData = ServerConnection.ExecuteSQL(mySQL);
 

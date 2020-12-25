@@ -36,12 +36,23 @@ namespace Site_Yonetim_Otomasyonu.Screens
             ShowCarData("SELECT Arac_Plaka as 'Aracin Plakasi',Marka,Model,Daire_Numarasi as 'Daire Numarasi'" +
                 ",Irtibat_No as 'Irtibat Numarasi',Arac_ID FROM Arac");
 
+            CountRowFromDatabase();
 
             ComboBoxItemFromDatabase();
             ComboBoxItemFromDatabase2();
             ComboBoxDuesFromDatabase();
 
             connection.Close();
+        }
+
+        public void CountRowFromDatabase()
+        {
+            labelControl32.Text = dataGridView2.Rows.Count.ToString();
+            labelControl33.Text = dataGridView4.Rows.Count.ToString();
+            labelControl35.Text = dataGridView3.Rows.Count.ToString();
+            labelControl37.Text = dataGridView1.Rows.Count.ToString();
+
+
         }
 
         public void ComboBoxDuesFromDatabase()
@@ -241,7 +252,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
         private void simpleButton3_Click(object sender, EventArgs e)
         {
 
-            if (this.dataGridView1.SelectedRows.Count > 0)
+            if (this.dataGridView1.SelectedRows.Count >= 0)
             {
                 connection.Open();
                 dataGridView1.Rows.RemoveAt(this.dataGridView1.SelectedRows[0].Index);
@@ -393,7 +404,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
         private void simpleButton9_Click(object sender, EventArgs e)
         {
-            if (this.dataGridView3.SelectedRows.Count > 0)
+            if (this.dataGridView3.SelectedRows.Count >= 0)
             {
                 connection.Open();
                 dataGridView3.Rows.RemoveAt(this.dataGridView3.SelectedRows[0].Index);
@@ -516,7 +527,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
         private void simpleButton15_Click(object sender, EventArgs e)
         {
-            if (this.dataGridView4.SelectedRows.Count > 0)
+            if (this.dataGridView4.SelectedRows.Count >= 0)
             {
                 connection.Open();
                 dataGridView4.Rows.RemoveAt(this.dataGridView4.SelectedRows[0].Index);
@@ -555,22 +566,26 @@ namespace Site_Yonetim_Otomasyonu.Screens
 
             updateApartmenForm.apartmentNumtextEdit.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
             updateApartmenForm.apartmentStatusComboBoxEdit1.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-            updateApartmenForm.apartmentHostComboBoxEdit2.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-            updateApartmenForm.floorUpDown1.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
+            updateApartmenForm.apartmentHostComboBoxEdit2.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+            updateApartmenForm.floorUpDown1.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
 
             updateApartmenForm.whereApartment = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+
+            updateApartmenForm.Show();
 
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
 
-            if (this.dataGridView1.SelectedRows.Count > 0)
+            if (this.dataGridView2.SelectedRows.Count >= 0)
             {
                 connection.Open();
                 dataGridView2.Rows.RemoveAt(this.dataGridView2.SelectedRows[0].Index);
+
                 string selectedUser = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                SqlCommand cmd = new SqlCommand("DELETE FROM Daire WHERE Daire_Numarasi =" + selectedUser + "", connection);
+
+                SqlCommand cmd = new SqlCommand("DELETE FROM Daire WHERE Daire_Numarasi ='"+ selectedUser + "'", connection);
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 MessageBox.Show("Daire Silindi!", "Harika", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -596,7 +611,7 @@ namespace Site_Yonetim_Otomasyonu.Screens
              "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire WHERE Daire_Durumu='"+textEdit1.Text+"'");
             }
             else if (radioButton5.Checked && !string.IsNullOrEmpty(textEdit1.Text))
-            {
+            {   
                 ShowApartmentData("SELECT Daire_Numarasi as 'Daire Numarasi', Daire_Durumu as 'Dairenin Durumu', Daire_Sakini as " +
              "'Daire Sakini', Kat as 'Oturdugu Kat' FROM Daire WHERE Daire_Sahibi='" + textEdit1.Text + "'");
             }
@@ -624,6 +639,21 @@ namespace Site_Yonetim_Otomasyonu.Screens
             ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
                 "',Aciklama,Is_Adresi as'Is Adresi', Kisi_ID as'Kisi Numarasi' From Kisi");
+        }
+
+        private void groupControl9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl33_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
