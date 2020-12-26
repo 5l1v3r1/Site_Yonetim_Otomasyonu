@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
             this.apartmentPersonComboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.apartmentHostComboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.floorUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -228,7 +228,7 @@
 
         #endregion
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private GradientPanel gradientPanel1;
+        private e gradientPanel1;
         private DevExpress.XtraEditors.SimpleButton registerButton;
         public DevExpress.XtraEditors.ComboBoxEdit apartmentPersonComboBoxEdit3;
         public DevExpress.XtraEditors.ComboBoxEdit apartmentHostComboBoxEdit2;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
             this.showPasswordCheckBox = new DevExpress.XtraEditors.CheckEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registerButton = new DevExpress.XtraEditors.SimpleButton();
@@ -188,7 +188,7 @@
         private DevExpress.XtraEditors.LabelControl passwordLabel;
         private DevExpress.XtraEditors.TextEdit userNameTextEdit;
         private DevExpress.XtraEditors.TextEdit passwordTextEdit;
-        private GradientPanel gradientPanel1;
+        private e gradientPanel1;
         private DevExpress.XtraEditors.SimpleButton registerButton;
         private DevExpress.XtraEditors.SimpleButton forgetPasswordButton;
         private System.Windows.Forms.PictureBox pictureBox1;
