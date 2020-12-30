@@ -21,6 +21,8 @@ namespace Site_Yonetim_Otomasyonu.Screens
         public MainForm()
         {
             InitializeComponent();
+            ShowDuesFromData();
+            ShowCarFromData();
 
             ShowPersonData("Select Daire_Sahibi as 'Sahiplik Durumu', " +
                 "Ad,Soyad,Telefon_No as 'Telefon Numarasi',E_Mail as 'E posta" +
@@ -291,15 +293,37 @@ namespace Site_Yonetim_Otomasyonu.Screens
             updateUserForm.Show();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
+        public void ShowCarFromData()
+        {
+            connection.Open();
+            SqlCommand command = new SqlCommand("SELECT Marka , Daire_Numarasi FROM Arac", connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                chart2.Series["Arac"].Points.AddXY(  reader[0].ToString(), reader[1].ToString());
+            }
+
+            connection.Close();
         }
 
-        private void simpleButton8_Click(object sender, EventArgs e)
+        public void ShowDuesFromData()
         {
+            connection.Open();
+            SqlCommand command = new SqlCommand("SELECT Daire_Numarasi,Toplam_Tutar FROM Aidat", connection);
+            SqlDataReader reader = command.ExecuteReader();
 
+            while (reader.Read())
+            {
+                chart1.Series["Aidat(TL)"].Points.AddXY("Daire " + reader[0].ToString(), reader[1].ToString());
+            }
+
+            connection.Close();
         }
+
+
+
 
         private void simpleButton8_Click_1(object sender, EventArgs e)
         {
@@ -652,6 +676,16 @@ namespace Site_Yonetim_Otomasyonu.Screens
         }
 
         private void labelControl33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navigationFrame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart2_Click(object sender, EventArgs e)
         {
 
         }

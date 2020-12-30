@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sahipCheckedComboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.registerButton = new DevExpress.XtraEditors.SimpleButton();
@@ -272,7 +272,7 @@
 
         #endregion
 
-        private e gradientPanel1;
+        private GradientPanel gradientPanel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         public DevExpress.XtraEditors.ComboBoxEdit sahipCheckedComboBoxEdit1;
         private DevExpress.XtraEditors.SimpleButton registerButton;

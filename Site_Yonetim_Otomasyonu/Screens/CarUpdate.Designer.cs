@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.carTelTextEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.carPTextEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.carModelTextEdit6 = new DevExpress.XtraEditors.TextEdit();
@@ -219,7 +219,7 @@
 
         #endregion
 
-        private e gradientPanel1;
+        private GradientPanel gradientPanel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         public DevExpress.XtraEditors.TextEdit carTelTextEdit8;
         public DevExpress.XtraEditors.TextEdit carPTextEdit7;

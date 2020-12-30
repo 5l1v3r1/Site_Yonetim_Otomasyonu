@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.duesAprtBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.totalTextEdit6 = new DevExpress.XtraEditors.TextEdit();
@@ -253,7 +253,7 @@
 
         #endregion
 
-        private e gradientPanel1;
+        private GradientPanel gradientPanel1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton registerButton;
         public DevExpress.XtraEditors.ComboBoxEdit duesAprtBoxEdit1;

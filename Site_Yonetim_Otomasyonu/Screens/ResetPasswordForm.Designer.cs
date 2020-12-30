@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.e();
+            this.gradientPanel1 = new Site_Yonetim_Otomasyonu.GradientPanel();
             this.showPasswordCheckBox = new DevExpress.XtraEditors.CheckEdit();
             this.verifyButton = new DevExpress.XtraEditors.SimpleButton();
             this.resetlTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -144,7 +144,7 @@
 
         #endregion
 
-        private e gradientPanel1;
+        private GradientPanel gradientPanel1;
         private DevExpress.XtraEditors.SimpleButton verifyButton;
         private DevExpress.XtraEditors.TextEdit resetlTextEdit;
         private DevExpress.XtraEditors.LabelControl idLabel;
