@@ -16,7 +16,7 @@ namespace Site_Yonetim_Otomasyonu
         {
             Thread thread = new Thread(new ThreadStart(formRun));
             thread.Start();
-            Thread.Sleep(2000);
+            Thread.Sleep(1500);
             InitializeComponent();
            thread.Abort();
         }
