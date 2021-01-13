@@ -8,9 +8,7 @@ namespace Site_Yonetim_Otomasyonu.Connection
 {
     class ServerConnection
     {
-        public static string stringConnection = "Data Source=DESKTOP-2V922V8\\SQLEXPRESS01;" +
-            "Initial Catalog=SiteYonetimSistemi;" +
-            "Integrated Security=True";
+        public static string stringConnection = "//TO DO";
 
 
         public static DataTable ExecuteSQL(string sql)

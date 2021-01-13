@@ -14,11 +14,11 @@ namespace Site_Yonetim_Otomasyonu
     {
         public LoginForm()
         {
-            Thread thread = new Thread(new ThreadStart(formRun));
-            thread.Start();
-            Thread.Sleep(1500);
+//Thread thread = new Thread(new ThreadStart(formRun));
+           // thread.Start();
+           // Thread.Sleep(1500);
             InitializeComponent();
-           thread.Abort();
+           // thread.Abort();
         }
       
         public void formRun()

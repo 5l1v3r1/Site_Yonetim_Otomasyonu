@@ -1,0 +1,6 @@
+Çalıştırma Yönergeleri
+-Öncellikle klasörde bulunan SiteYonetimSistemi.bacpac kendi SQL Server'nıza import edin.
+-İmport ederken SiteYonetimSistemi ismini kullanınız.
+-Projenin Kalanını Visual Studioya import ediniz.
+-SQL Bağlantısının Çalışması için projedeki Connection klasörünün altında bulunan ServerConnection.cs classındaki gerekli düzenlemeyi yapınız.
+-Dilerseniz exe dosyasınıda çalıştırabilirsiniz.
