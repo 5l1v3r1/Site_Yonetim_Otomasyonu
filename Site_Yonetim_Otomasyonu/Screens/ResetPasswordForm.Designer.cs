@@ -35,6 +35,7 @@
             this.idLabel = new DevExpress.XtraEditors.LabelControl();
             this.passwordLabel = new DevExpress.XtraEditors.LabelControl();
             this.rResetlTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showPasswordCheckBox.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resetlTextEdit.Properties)).BeginInit();
@@ -45,6 +46,7 @@
             // 
             this.gradientPanel1.Angle = 40F;
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
+            this.gradientPanel1.Controls.Add(this.simpleButton1);
             this.gradientPanel1.Controls.Add(this.showPasswordCheckBox);
             this.gradientPanel1.Controls.Add(this.verifyButton);
             this.gradientPanel1.Controls.Add(this.resetlTextEdit);
@@ -73,9 +75,9 @@
             // 
             // verifyButton
             // 
-            this.verifyButton.Location = new System.Drawing.Point(90, 218);
+            this.verifyButton.Location = new System.Drawing.Point(54, 216);
             this.verifyButton.Name = "verifyButton";
-            this.verifyButton.Size = new System.Drawing.Size(93, 33);
+            this.verifyButton.Size = new System.Drawing.Size(69, 59);
             this.verifyButton.TabIndex = 7;
             this.verifyButton.Text = "Sifirla";
             this.verifyButton.Click += new System.EventHandler(this.verifyButton_Click);
@@ -121,6 +123,14 @@
             this.rResetlTextEdit.Size = new System.Drawing.Size(167, 20);
             this.rResetlTextEdit.TabIndex = 4;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(171, 228);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(101, 33);
+            this.simpleButton1.TabIndex = 10;
+            this.simpleButton1.Text = "simpleButton1";
+            // 
             // ResetPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,5 +161,6 @@
         private DevExpress.XtraEditors.LabelControl passwordLabel;
         private DevExpress.XtraEditors.TextEdit rResetlTextEdit;
         private DevExpress.XtraEditors.CheckEdit showPasswordCheckBox;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
